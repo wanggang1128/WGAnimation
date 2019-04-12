@@ -12,6 +12,13 @@ class ViewController: UIViewController {
 
     var loginBtn: UIButton!
     
+    /*
+     设置视图的动画初始状态
+     添加视图的动画相应属性
+     设置动画最终状态
+    */
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
