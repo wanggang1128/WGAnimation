@@ -1,0 +1,20 @@
+//
+//  WGAnimation.pch
+//  WGAnimation
+//
+//  Created by wanggang on 2018/8/17.
+//  Copyright © 2018年 wanggang. All rights reserved.
+//
+
+#ifndef WGAnimation_pch
+#define WGAnimation_pch
+
+#ifdef __OBJC__//判断,是OC文件才会导入下面的头文件
+
+#import "WGDefine.h"
+#import "UIView+WGViewRect.h"
+#import <objc/message.h>
+
+#endif //OC文件判断结束
+
+#endif /* WGAnimation_pch */
