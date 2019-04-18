@@ -6,9 +6,6 @@
 //  Copyright © 2019 wanggang. All rights reserved.
 //
 
-#define SLIDER_X_BOUND 30
-#define SLIDER_Y_BOUND 40
-
 #import "WGUISlider.h"
 
 @interface WGUISlider()
@@ -32,14 +29,9 @@
     BOOL result = [super pointInside:point withEvent:event];
     
     if (!result) {
-        //如果不在slider范围类,适当扩充响应范围
-        if ((point.x >= (_lastRect.origin.x - SLIDER_X_BOUND)) && (point.x <= (_lastRect.origin.x + _lastRect.size.width + SLIDER_X_BOUND))
-            && (point.y >= -SLIDER_Y_BOUND) && (point.y < (_lastRect.size.height + SLIDER_Y_BOUND))) {
-            //在扩充范围内,返回yes
-            result = YES;
-        }
+        
+        result = CGRectContainsPoint(_lastRect, point);
     }
-    //否则返回父类的结果
     return result;
 }
 
