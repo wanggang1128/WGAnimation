@@ -1,5 +1,5 @@
 //
-//  WGGeometryAniViewController.swift
+//  WGLocationAniViewController.swift
 //  WGAnimationPrimary
 //
 //  Created by wanggang on 2019/4/18.
@@ -8,18 +8,19 @@
 
 import UIKit
 
-class WGGeometryAniViewController: UIViewController {
+class WGLocationAniViewController: UIViewController {
 
     var loginBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.backgroundColor = UIColor.white
         
         loginBtn = UIButton(frame: CGRect(x: 20, y: 200, width: WgWith-20*2, height: 30))
         loginBtn.backgroundColor = UIColor.cyan
         loginBtn.setTitle("登录", for: .normal)
+        loginBtn.setTitleColor(UIColor.black, for: .normal)
         view.addSubview(loginBtn)
     }
     
@@ -30,10 +31,10 @@ class WGGeometryAniViewController: UIViewController {
         UIView.beginAnimations(nil, context: nil)
         //动画持续时间
         UIView.setAnimationDuration(2)
-        //最后状态
-        loginBtn.bounds = CGRect(x: 0, y: 0, width: loginBtn.width*0.7, height: loginBtn.height*1.3)
+        //位置+形状变化
+        loginBtn.frame = CGRect(x: 0, y: loginBtn.bottom+50, width: loginBtn.width*0.7, height: loginBtn.height*1.2)
         //提交动画
         UIView.commitAnimations()
     }
-    
+
 }

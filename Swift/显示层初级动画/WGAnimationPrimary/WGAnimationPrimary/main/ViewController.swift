@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     let tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: WgWith, height: WgHeight))
-    let dataArr = ["几何形状动画", "位置形状动画"]
+    let dataArr = ["几何形状动画", "位置形状动画", "淡入淡出动画和颜色", "综合位置&形状&颜色&渐变动画"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +61,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         case 1:
             
             let vc = WGLocationAniViewController.init()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+            
+        case 2:
+            
+            let vc = WGAlphaAniViewController.init()
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+            
+        case 3:
+            
+            let vc = WGCombinationViewController.init()
             self.navigationController?.pushViewController(vc, animated: true)
             break
             
