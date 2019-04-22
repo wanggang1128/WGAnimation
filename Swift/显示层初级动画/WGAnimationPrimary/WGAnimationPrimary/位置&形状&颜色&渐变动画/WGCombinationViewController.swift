@@ -51,6 +51,6 @@ class WGCombinationViewController: UIViewController {
             self.loginBtn.alpha = 1;
         }
     }
-    
-
 }
+
+

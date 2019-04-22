@@ -12,7 +12,8 @@ class WGTurnPlateViewController: UIViewController {
 
     var imgView: UIImageView?
     var index = 1.0
-    
+    //防止内存泄漏
+    var isFinish = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +38,24 @@ class WGTurnPlateViewController: UIViewController {
         UIView.commitAnimations()
     }
     
-    @objc func animationStop(){
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         
-        UIView.beginAnimations(nil, context: nil)
-        UIView.setAnimationDelegate(self)
-        UIView.setAnimationDuration(0.3)
-        index += 1;
-        let angle = (CGFloat)(Double.pi/2*index)
-        self.imgView?.transform = CGAffineTransform(rotationAngle: angle)
-        UIView.setAnimationDidStop(#selector(animationStop))
-        UIView.commitAnimations()
+        isFinish = true
+    }
+    
+    @objc func animationStop() {
+        
+        if !isFinish {
+            
+            UIView.beginAnimations(nil, context: nil)
+            UIView.setAnimationDelegate(self)
+            UIView.setAnimationDuration(0.3)
+            index += 1;
+            let angle = (CGFloat)(Double.pi/2*index)
+            self.imgView?.transform = CGAffineTransform(rotationAngle: angle)
+            UIView.setAnimationDidStop(#selector(animationStop))
+            UIView.commitAnimations()
+        }
     }
 }
