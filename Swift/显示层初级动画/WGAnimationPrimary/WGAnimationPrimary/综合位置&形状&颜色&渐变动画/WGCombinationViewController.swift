@@ -31,7 +31,7 @@ class WGCombinationViewController: UIViewController {
         UIView.animate(withDuration: 2) {
             
             //旋转
-            self.loginBtn.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
+            self.loginBtn.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
             //位置,形状
             self.loginBtn.frame = CGRect(x: WgWith, y: 64, width: 0, height: 0)
             //颜色改变

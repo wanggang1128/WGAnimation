@@ -19,6 +19,8 @@
 		326076E722686E7F005A9059 /* WGLocationAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326076E622686E7F005A9059 /* WGLocationAniViewController.swift */; };
 		326076EA22687871005A9059 /* WGAlphaAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326076E922687871005A9059 /* WGAlphaAniViewController.swift */; };
 		326076ED22687BCD005A9059 /* WGCombinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326076EC22687BCD005A9059 /* WGCombinationViewController.swift */; };
+		32AFFBF6226D955800F24819 /* WGZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFFBF5226D955800F24819 /* WGZoomViewController.swift */; };
+		32AFFBF8226DA17C00F24819 /* WGTurnPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFFBF7226DA17C00F24819 /* WGTurnPlateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		326076E622686E7F005A9059 /* WGLocationAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGLocationAniViewController.swift; sourceTree = "<group>"; };
 		326076E922687871005A9059 /* WGAlphaAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGAlphaAniViewController.swift; sourceTree = "<group>"; };
 		326076EC22687BCD005A9059 /* WGCombinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCombinationViewController.swift; sourceTree = "<group>"; };
+		32AFFBF5226D955800F24819 /* WGZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGZoomViewController.swift; sourceTree = "<group>"; };
+		32AFFBF7226DA17C00F24819 /* WGTurnPlateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGTurnPlateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		326076AE226857E6005A9059 /* WGAnimationPrimary */ = {
 			isa = PBXGroup;
 			children = (
+				32AFFBF4226D94D300F24819 /* 旋转&缩放&平移&回调 */,
 				326076EB22687B1D005A9059 /* 综合位置&形状&颜色&渐变动画 */,
 				326076E122686275005A9059 /* main */,
 			);
@@ -178,6 +183,23 @@
 				326076E822687846005A9059 /* 淡入淡出和颜色 */,
 			);
 			path = "综合位置&形状&颜色&渐变动画";
+			sourceTree = "<group>";
+		};
+		32AFFBF4226D94D300F24819 /* 旋转&缩放&平移&回调 */ = {
+			isa = PBXGroup;
+			children = (
+				32AFFBF9226DA1DC00F24819 /* 简单转盘 */,
+				32AFFBF5226D955800F24819 /* WGZoomViewController.swift */,
+			);
+			path = "旋转&缩放&平移&回调";
+			sourceTree = "<group>";
+		};
+		32AFFBF9226DA1DC00F24819 /* 简单转盘 */ = {
+			isa = PBXGroup;
+			children = (
+				32AFFBF7226DA17C00F24819 /* WGTurnPlateViewController.swift */,
+			);
+			path = "简单转盘";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32AFFBF6226D955800F24819 /* WGZoomViewController.swift in Sources */,
 				326076E022685984005A9059 /* WGSwiftProjectHeader.swift in Sources */,
+				32AFFBF8226DA17C00F24819 /* WGTurnPlateViewController.swift in Sources */,
 				326076B2226857E6005A9059 /* ViewController.swift in Sources */,
 				326076EA22687871005A9059 /* WGAlphaAniViewController.swift in Sources */,
 				326076E722686E7F005A9059 /* WGLocationAniViewController.swift in Sources */,
