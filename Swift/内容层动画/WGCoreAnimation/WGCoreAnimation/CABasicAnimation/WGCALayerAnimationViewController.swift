@@ -130,6 +130,27 @@ extension WGCALayerAnimationViewController: UITableViewDelegate, UITableViewData
             let ani = animationMethod(keyPath: "opacity", fromValue: UIColor.green.cgColor, toValue: 1.0, duration: 2)
             showBtn.layer.add(ani, forKey: nil)
             
+        case 7:
+            //圆角动画
+            buildShowBtn()
+            let ani = animationMethod(keyPath: "cornerRadius", fromValue: nil, toValue: 15, duration: 2)
+            showBtn.layer.add(ani, forKey: nil)
+            
+        case 8:
+            //边框动画
+            buildShowBtn()
+            let ani = animationMethod(keyPath: "borderWidth", fromValue: nil, toValue: 5, duration: 2)
+            showBtn.layer.add(ani, forKey: nil)
+            
+        case 9:
+            //阴影动画
+            buildShowBtn()
+            showBtn.layer.shadowColor = UIColor.green.cgColor
+            showBtn.layer.shadowOpacity = 0.5
+            let toValue = NSValue(cgSize: CGSize(width: -10, height: 10))
+            let ani = animationMethod(keyPath: "shadowOffset", fromValue: nil, toValue: toValue, duration: 2)
+            showBtn.layer.add(ani, forKey: nil)
+            
         default:
             break
         }
