@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: WgWith, height: WgHeight))
-    let dataArr = ["CALayer层动画", "位置形状动画", "淡入淡出动画和颜色", "综合位置&形状&颜色&渐变动画", "旋转&缩放&平移&回调", "旋转实现-简单转盘", "关键帧动画-飞机降落", "关键帧动画-简单转盘", "逐帧动画-飞机"]
+    let dataArr = ["CALayer层动画", "水纹动画"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +54,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         switch indexPath.row {
         case 0:
             let vc = WGCALayerAnimationViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case 1:
+            let vc = WGWaterWaveBtnViewController()
             self.navigationController?.pushViewController(vc, animated: true)
             
         default:

@@ -16,6 +16,8 @@
 		322ACD05226EAA1A009BF1CE /* UIView_WGFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD03226EAA1A009BF1CE /* UIView_WGFrame.swift */; };
 		322ACD06226EAA1A009BF1CE /* WGSwiftProjectHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD04226EAA1A009BF1CE /* WGSwiftProjectHeader.swift */; };
 		322ACD09226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD08226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift */; };
+		322ACD13226F0435009BF1CE /* WGWaterWaveBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD12226F0435009BF1CE /* WGWaterWaveBtn.swift */; };
+		322ACD15226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD14226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		322ACD03226EAA1A009BF1CE /* UIView_WGFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_WGFrame.swift; path = "../../../../显示层动画/WGAnimationPrimary/WGAnimationPrimary/main/UIView_WGFrame.swift"; sourceTree = "<group>"; };
 		322ACD04226EAA1A009BF1CE /* WGSwiftProjectHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WGSwiftProjectHeader.swift; path = "../../../../显示层动画/WGAnimationPrimary/WGAnimationPrimary/main/WGSwiftProjectHeader.swift"; sourceTree = "<group>"; };
 		322ACD08226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCALayerAnimationViewController.swift; sourceTree = "<group>"; };
+		322ACD12226F0435009BF1CE /* WGWaterWaveBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGWaterWaveBtn.swift; sourceTree = "<group>"; };
+		322ACD14226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGWaterWaveBtnViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		322ACCD3226EA949009BF1CE /* WGCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				322ACD11226F03CE009BF1CE /* 水纹动画 */,
 				322ACD10226EFCA1009BF1CE /* CAKeyframeAnimation */,
 				322ACD07226EAA99009BF1CE /* CABasic&KeyframeAnimation */,
 				322ACD02226EA9F3009BF1CE /* main */,
@@ -153,6 +158,15 @@
 			children = (
 			);
 			path = CAKeyframeAnimation;
+			sourceTree = "<group>";
+		};
+		322ACD11226F03CE009BF1CE /* 水纹动画 */ = {
+			isa = PBXGroup;
+			children = (
+				322ACD12226F0435009BF1CE /* WGWaterWaveBtn.swift */,
+				322ACD14226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift */,
+			);
+			path = "水纹动画";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,10 +301,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				322ACD06226EAA1A009BF1CE /* WGSwiftProjectHeader.swift in Sources */,
+				322ACD13226F0435009BF1CE /* WGWaterWaveBtn.swift in Sources */,
 				322ACD09226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift in Sources */,
 				322ACCD7226EA949009BF1CE /* ViewController.swift in Sources */,
 				322ACCD5226EA949009BF1CE /* AppDelegate.swift in Sources */,
 				322ACD05226EAA1A009BF1CE /* UIView_WGFrame.swift in Sources */,
+				322ACD15226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
