@@ -18,7 +18,7 @@ class WGWaterWaveBtnViewController: UIViewController {
         view.backgroundColor = UIColor.white
         
         btn = WGWaterWaveBtn(frame: CGRect(x: 20, y: 100, width: WgWith-20*2, height: 50))
-        btn.setTitle("登录", for: .normal)
+        btn.setTitle("点我", for: .normal)
         btn.setTitleColor(UIColor.black, for: .normal)
         btn.addTarget(self, action: #selector(btnClicked(sender:event:)), for: .touchUpInside)
         view.addSubview(btn)
