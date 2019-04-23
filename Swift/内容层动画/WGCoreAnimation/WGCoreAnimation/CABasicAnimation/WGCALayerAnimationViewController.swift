@@ -18,6 +18,7 @@ class WGCALayerAnimationViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.yellow
+        title = "CALayer层常用动画"
         
         buildTableView()
         buildShowBtn()
