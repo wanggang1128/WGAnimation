@@ -12,7 +12,7 @@ class WGCALayerAnimationViewController: UIViewController {
 
     var showBtn: UIButton!
     var tableView: UITableView!
-    let dataArr = ["位置动画-position","位置动画-transform.trainslation.y","缩放动画-trainsform.scale","旋转动画-trainsform.rotation","颜色动画-backgroundColor","颜色动画-borderColor","淡入淡出动画-opacity","圆角动画-cornerRadius","边框动画-borderWidth","阴影动画-shadowOffset"]
+    let dataArr = ["位置动画-position","位置动画-transform.trainslation.y","缩放动画-trainsform.scale","旋转动画-trainsform.rotation","颜色动画-backgroundColor","颜色动画-borderColor","淡入淡出动画-opacity","圆角动画-cornerRadius","边框动画-borderWidth","阴影动画-shadowOffset","关键帧动画-淡出", "组合动画效果"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -151,6 +151,44 @@ extension WGCALayerAnimationViewController: UITableViewDelegate, UITableViewData
             let toValue = NSValue(cgSize: CGSize(width: -10, height: 10))
             let ani = animationMethod(keyPath: "shadowOffset", fromValue: nil, toValue: toValue, duration: 2)
             showBtn.layer.add(ani, forKey: nil)
+            
+        case 10:
+            //关键帧动画-淡出
+            buildShowBtn()
+            let arr = [
+                NSNumber(value: 0.9),
+                NSNumber(value: 0.8),
+                NSNumber(value: 0.7),
+                NSNumber(value: 0.6),
+                NSNumber(value: 0.5),
+                NSNumber(value: 0.4),
+                NSNumber(value: 0.3),
+                NSNumber(value: 0.2),
+                NSNumber(value: 0.1),
+                NSNumber(value: 0)
+            ];
+            let ani = CAKeyframeAnimation()
+            ani.keyPath = "opacity"
+            ani.values = arr
+            ani.duration = 6
+            ani.isRemovedOnCompletion = false
+            ani.fillMode = .forwards
+            showBtn.layer.add(ani, forKey: nil)
+            
+        case 11:
+            //组合动画
+            buildShowBtn()
+            
+            let rotationAni = animationMethod(keyPath: "transform.rotation", fromValue: nil, toValue: Double.pi/2, duration: 2)
+            let scaleAni = animationMethod(keyPath: "transform.scale", fromValue: 1.0, toValue: 0, duration: 2)
+            let transformAni = animationMethod(keyPath: "transform.translation", fromValue: nil, toValue: NSValue(cgPoint: CGPoint(x: 217, y: -200)), duration: 2)
+            
+            let aniGroup = CAAnimationGroup()
+            aniGroup.animations = [rotationAni, scaleAni, transformAni]
+            aniGroup.duration = 2
+            aniGroup.fillMode = .forwards
+            aniGroup.isRemovedOnCompletion = false
+            showBtn.layer.add(aniGroup, forKey: nil)
             
         default:
             break

@@ -101,7 +101,8 @@
 		322ACCD3226EA949009BF1CE /* WGCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				322ACD07226EAA99009BF1CE /* CABasicAnimation */,
+				322ACD10226EFCA1009BF1CE /* CAKeyframeAnimation */,
+				322ACD07226EAA99009BF1CE /* CABasic&KeyframeAnimation */,
 				322ACD02226EA9F3009BF1CE /* main */,
 			);
 			path = WGCoreAnimation;
@@ -139,12 +140,19 @@
 			path = main;
 			sourceTree = "<group>";
 		};
-		322ACD07226EAA99009BF1CE /* CABasicAnimation */ = {
+		322ACD07226EAA99009BF1CE /* CABasic&KeyframeAnimation */ = {
 			isa = PBXGroup;
 			children = (
 				322ACD08226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift */,
 			);
-			path = CABasicAnimation;
+			path = "CABasic&KeyframeAnimation";
+			sourceTree = "<group>";
+		};
+		322ACD10226EFCA1009BF1CE /* CAKeyframeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CAKeyframeAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
