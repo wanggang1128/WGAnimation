@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  WGLoginBtnDemo
+//  WGCoreAnimation
 //
-//  Created by wanggang on 2019/4/12.
+//  Created by wanggang on 2019/4/23.
 //  Copyright © 2019 bozhong. All rights reserved.
 //
 
@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.white
         
         let vc = ViewController.init()
-        window?.rootViewController = vc
+        let nav = UINavigationController(rootViewController: vc)
         
+        window?.rootViewController = nav;
         window?.makeKeyAndVisible()
         
         return true

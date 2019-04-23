@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		322ACCD5226EA949009BF1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACCD4226EA949009BF1CE /* AppDelegate.swift */; };
+		322ACCD7226EA949009BF1CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACCD6226EA949009BF1CE /* ViewController.swift */; };
+		322ACCDC226EA94A009BF1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322ACCDB226EA94A009BF1CE /* Assets.xcassets */; };
+		322ACCDF226EA94A009BF1CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322ACCDD226EA94A009BF1CE /* LaunchScreen.storyboard */; };
+		322ACCEA226EA94A009BF1CE /* WGCoreAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACCE9226EA94A009BF1CE /* WGCoreAnimationTests.swift */; };
+		322ACCF5226EA94A009BF1CE /* WGCoreAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACCF4226EA94A009BF1CE /* WGCoreAnimationUITests.swift */; };
+		322ACD05226EAA1A009BF1CE /* UIView_WGFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD03226EAA1A009BF1CE /* UIView_WGFrame.swift */; };
+		322ACD06226EAA1A009BF1CE /* WGSwiftProjectHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD04226EAA1A009BF1CE /* WGSwiftProjectHeader.swift */; };
+		322ACD09226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD08226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		322ACCE6226EA94A009BF1CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 322ACCC9226EA948009BF1CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 322ACCD0226EA949009BF1CE;
+			remoteInfo = WGCoreAnimation;
+		};
+		322ACCF1226EA94A009BF1CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 322ACCC9226EA948009BF1CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 322ACCD0226EA949009BF1CE;
+			remoteInfo = WGCoreAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		322ACCD1226EA949009BF1CE /* WGCoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGCoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		322ACCD4226EA949009BF1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		322ACCD6226EA949009BF1CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		322ACCDB226EA94A009BF1CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		322ACCDE226EA94A009BF1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		322ACCE0226EA94A009BF1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322ACCE5226EA94A009BF1CE /* WGCoreAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGCoreAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		322ACCE9226EA94A009BF1CE /* WGCoreAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCoreAnimationTests.swift; sourceTree = "<group>"; };
+		322ACCEB226EA94A009BF1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322ACCF0226EA94A009BF1CE /* WGCoreAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGCoreAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		322ACCF4226EA94A009BF1CE /* WGCoreAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCoreAnimationUITests.swift; sourceTree = "<group>"; };
+		322ACCF6226EA94A009BF1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322ACD03226EAA1A009BF1CE /* UIView_WGFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView_WGFrame.swift; path = "../../../../显示层动画/WGAnimationPrimary/WGAnimationPrimary/main/UIView_WGFrame.swift"; sourceTree = "<group>"; };
+		322ACD04226EAA1A009BF1CE /* WGSwiftProjectHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WGSwiftProjectHeader.swift; path = "../../../../显示层动画/WGAnimationPrimary/WGAnimationPrimary/main/WGSwiftProjectHeader.swift"; sourceTree = "<group>"; };
+		322ACD08226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCALayerAnimationViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		322ACCCE226EA949009BF1CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322ACCE2226EA94A009BF1CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322ACCED226EA94A009BF1CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		322ACCC8226EA948009BF1CE = {
+			isa = PBXGroup;
+			children = (
+				322ACCD3226EA949009BF1CE /* WGCoreAnimation */,
+				322ACCE8226EA94A009BF1CE /* WGCoreAnimationTests */,
+				322ACCF3226EA94A009BF1CE /* WGCoreAnimationUITests */,
+				322ACCD2226EA949009BF1CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		322ACCD2226EA949009BF1CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				322ACCD1226EA949009BF1CE /* WGCoreAnimation.app */,
+				322ACCE5226EA94A009BF1CE /* WGCoreAnimationTests.xctest */,
+				322ACCF0226EA94A009BF1CE /* WGCoreAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		322ACCD3226EA949009BF1CE /* WGCoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				322ACD07226EAA99009BF1CE /* CABasicAnimation */,
+				322ACD02226EA9F3009BF1CE /* main */,
+			);
+			path = WGCoreAnimation;
+			sourceTree = "<group>";
+		};
+		322ACCE8226EA94A009BF1CE /* WGCoreAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				322ACCE9226EA94A009BF1CE /* WGCoreAnimationTests.swift */,
+				322ACCEB226EA94A009BF1CE /* Info.plist */,
+			);
+			path = WGCoreAnimationTests;
+			sourceTree = "<group>";
+		};
+		322ACCF3226EA94A009BF1CE /* WGCoreAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				322ACCF4226EA94A009BF1CE /* WGCoreAnimationUITests.swift */,
+				322ACCF6226EA94A009BF1CE /* Info.plist */,
+			);
+			path = WGCoreAnimationUITests;
+			sourceTree = "<group>";
+		};
+		322ACD02226EA9F3009BF1CE /* main */ = {
+			isa = PBXGroup;
+			children = (
+				322ACD03226EAA1A009BF1CE /* UIView_WGFrame.swift */,
+				322ACD04226EAA1A009BF1CE /* WGSwiftProjectHeader.swift */,
+				322ACCDB226EA94A009BF1CE /* Assets.xcassets */,
+				322ACCDD226EA94A009BF1CE /* LaunchScreen.storyboard */,
+				322ACCE0226EA94A009BF1CE /* Info.plist */,
+				322ACCD6226EA949009BF1CE /* ViewController.swift */,
+				322ACCD4226EA949009BF1CE /* AppDelegate.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		322ACD07226EAA99009BF1CE /* CABasicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				322ACD08226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift */,
+			);
+			path = CABasicAnimation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		322ACCD0226EA949009BF1CE /* WGCoreAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322ACCF9226EA94A009BF1CE /* Build configuration list for PBXNativeTarget "WGCoreAnimation" */;
+			buildPhases = (
+				322ACCCD226EA949009BF1CE /* Sources */,
+				322ACCCE226EA949009BF1CE /* Frameworks */,
+				322ACCCF226EA949009BF1CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WGCoreAnimation;
+			productName = WGCoreAnimation;
+			productReference = 322ACCD1226EA949009BF1CE /* WGCoreAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		322ACCE4226EA94A009BF1CE /* WGCoreAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322ACCFC226EA94A009BF1CE /* Build configuration list for PBXNativeTarget "WGCoreAnimationTests" */;
+			buildPhases = (
+				322ACCE1226EA94A009BF1CE /* Sources */,
+				322ACCE2226EA94A009BF1CE /* Frameworks */,
+				322ACCE3226EA94A009BF1CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				322ACCE7226EA94A009BF1CE /* PBXTargetDependency */,
+			);
+			name = WGCoreAnimationTests;
+			productName = WGCoreAnimationTests;
+			productReference = 322ACCE5226EA94A009BF1CE /* WGCoreAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		322ACCEF226EA94A009BF1CE /* WGCoreAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322ACCFF226EA94A009BF1CE /* Build configuration list for PBXNativeTarget "WGCoreAnimationUITests" */;
+			buildPhases = (
+				322ACCEC226EA94A009BF1CE /* Sources */,
+				322ACCED226EA94A009BF1CE /* Frameworks */,
+				322ACCEE226EA94A009BF1CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				322ACCF2226EA94A009BF1CE /* PBXTargetDependency */,
+			);
+			name = WGCoreAnimationUITests;
+			productName = WGCoreAnimationUITests;
+			productReference = 322ACCF0226EA94A009BF1CE /* WGCoreAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		322ACCC9226EA948009BF1CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WG;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = wanggang;
+				TargetAttributes = {
+					322ACCD0226EA949009BF1CE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					322ACCE4226EA94A009BF1CE = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 322ACCD0226EA949009BF1CE;
+					};
+					322ACCEF226EA94A009BF1CE = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 322ACCD0226EA949009BF1CE;
+					};
+				};
+			};
+			buildConfigurationList = 322ACCCC226EA949009BF1CE /* Build configuration list for PBXProject "WGCoreAnimation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 322ACCC8226EA948009BF1CE;
+			productRefGroup = 322ACCD2226EA949009BF1CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				322ACCD0226EA949009BF1CE /* WGCoreAnimation */,
+				322ACCE4226EA94A009BF1CE /* WGCoreAnimationTests */,
+				322ACCEF226EA94A009BF1CE /* WGCoreAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		322ACCCF226EA949009BF1CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322ACCDF226EA94A009BF1CE /* LaunchScreen.storyboard in Resources */,
+				322ACCDC226EA94A009BF1CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322ACCE3226EA94A009BF1CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322ACCEE226EA94A009BF1CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		322ACCCD226EA949009BF1CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322ACD06226EAA1A009BF1CE /* WGSwiftProjectHeader.swift in Sources */,
+				322ACD09226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift in Sources */,
+				322ACCD7226EA949009BF1CE /* ViewController.swift in Sources */,
+				322ACCD5226EA949009BF1CE /* AppDelegate.swift in Sources */,
+				322ACD05226EAA1A009BF1CE /* UIView_WGFrame.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322ACCE1226EA94A009BF1CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322ACCEA226EA94A009BF1CE /* WGCoreAnimationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322ACCEC226EA94A009BF1CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322ACCF5226EA94A009BF1CE /* WGCoreAnimationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		322ACCE7226EA94A009BF1CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 322ACCD0226EA949009BF1CE /* WGCoreAnimation */;
+			targetProxy = 322ACCE6226EA94A009BF1CE /* PBXContainerItemProxy */;
+		};
+		322ACCF2226EA94A009BF1CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 322ACCD0226EA949009BF1CE /* WGCoreAnimation */;
+			targetProxy = 322ACCF1226EA94A009BF1CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		322ACCDD226EA94A009BF1CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				322ACCDE226EA94A009BF1CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		322ACCF7226EA94A009BF1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		322ACCF8226EA94A009BF1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		322ACCFA226EA94A009BF1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGCoreAnimation/main/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGCoreAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		322ACCFB226EA94A009BF1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGCoreAnimation/main/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGCoreAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		322ACCFD226EA94A009BF1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGCoreAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGCoreAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WGCoreAnimation.app/WGCoreAnimation";
+			};
+			name = Debug;
+		};
+		322ACCFE226EA94A009BF1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGCoreAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGCoreAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WGCoreAnimation.app/WGCoreAnimation";
+			};
+			name = Release;
+		};
+		322ACD00226EA94A009BF1CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGCoreAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGCoreAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WGCoreAnimation;
+			};
+			name = Debug;
+		};
+		322ACD01226EA94A009BF1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGCoreAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGCoreAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WGCoreAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		322ACCCC226EA949009BF1CE /* Build configuration list for PBXProject "WGCoreAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322ACCF7226EA94A009BF1CE /* Debug */,
+				322ACCF8226EA94A009BF1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		322ACCF9226EA94A009BF1CE /* Build configuration list for PBXNativeTarget "WGCoreAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322ACCFA226EA94A009BF1CE /* Debug */,
+				322ACCFB226EA94A009BF1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		322ACCFC226EA94A009BF1CE /* Build configuration list for PBXNativeTarget "WGCoreAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322ACCFD226EA94A009BF1CE /* Debug */,
+				322ACCFE226EA94A009BF1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		322ACCFF226EA94A009BF1CE /* Build configuration list for PBXNativeTarget "WGCoreAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322ACD00226EA94A009BF1CE /* Debug */,
+				322ACD01226EA94A009BF1CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 322ACCC9226EA948009BF1CE /* Project object */;
+}

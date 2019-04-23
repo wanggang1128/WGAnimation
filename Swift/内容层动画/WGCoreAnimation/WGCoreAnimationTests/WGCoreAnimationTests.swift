@@ -1,15 +1,15 @@
 //
-//  WGLoginBtnDemoTests.swift
-//  WGLoginBtnDemoTests
+//  WGCoreAnimationTests.swift
+//  WGCoreAnimationTests
 //
-//  Created by wanggang on 2019/4/12.
+//  Created by wanggang on 2019/4/23.
 //  Copyright © 2019 bozhong. All rights reserved.
 //
 
 import XCTest
-@testable import WGLoginBtnDemo
+@testable import WGCoreAnimation
 
-class WGLoginBtnDemoTests: XCTestCase {
+class WGCoreAnimationTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
