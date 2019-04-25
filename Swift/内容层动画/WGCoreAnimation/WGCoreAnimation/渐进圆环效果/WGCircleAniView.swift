@@ -15,7 +15,7 @@ protocol WGCircleAniViewDelegate {
 class WGCircleAniView: UIView {
 
     var lineWidth: CGFloat = 4
-    let strokeColor = UIColor.red
+    var strokeColor = UIColor.black
     var circle = CAShapeLayer()
     var wgCircleAniViewDelegate: WGCircleAniViewDelegate?
     
@@ -36,7 +36,7 @@ class WGCircleAniView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func startCircleAnimation() {
+    func startCircleAnimation(duation: CFTimeInterval) {
         
         circle.strokeColor = strokeColor.cgColor
         let progressAni = CABasicAnimation()
@@ -44,7 +44,7 @@ class WGCircleAniView: UIView {
         progressAni.delegate = self
         progressAni.fromValue = 0
         progressAni.toValue = 1
-        progressAni.duration = 1
+        progressAni.duration = duation
         progressAni.fillMode = .forwards
         progressAni.isRemovedOnCompletion = false
         progressAni.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)

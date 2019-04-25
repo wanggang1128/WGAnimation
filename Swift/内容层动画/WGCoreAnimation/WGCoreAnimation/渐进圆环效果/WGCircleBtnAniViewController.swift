@@ -35,6 +35,10 @@ class WGCircleBtnAniViewController: UIViewController {
         
         btn02 = WGButtnAniView(frame: CGRect(x: (WgWith-btnW)/2, y: 200, width: btnW, height: btnH))
         view.addSubview(btn02)
+        //修改颜色
+        btn02.firstColor = UIColor.purple
+        btn02.midColor = UIColor.black
+        btn02.lastColor = UIColor.blue
         tap02 = UITapGestureRecognizer(target: self, action: #selector(tapMetnod02))
         btn02.addGestureRecognizer(tap02)
         
@@ -47,16 +51,28 @@ class WGCircleBtnAniViewController: UIViewController {
 
     @objc func tapMetnod01() {
         
-        btn01.startAnimation()
+        btn01.startAnimation(duation: 1)
     }
     
     @objc func tapMetnod02() {
         
-        btn02.startAnimation()
+        btn02.startAnimation(duation: 3)
+        //圆环动画时间
+        btn02.midDuation = 5
+        //恢复时间
+        btn02.lastDuation = 1
     }
     
     @objc func tapMetnod03() {
         
-        btn03.startAnimation()
+        //修改颜色
+        btn03.firstColor = UIColor.blue
+        btn03.midColor = UIColor.brown
+        btn03.lastColor = UIColor.purple
+        //圆环动画时间
+        btn03.midDuation = 1
+        //恢复时间
+        btn03.lastDuation = 5
+        btn03.startAnimation(duation: 5)
     }
 }

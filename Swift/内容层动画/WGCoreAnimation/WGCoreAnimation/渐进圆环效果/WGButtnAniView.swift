@@ -10,22 +10,40 @@ import UIKit
 
 class WGButtnAniView: UIView {
 
-    var startColor = UIColor.cyan
-    var finishColor = UIColor.yellow
+    var firstColor = UIColor.cyan{
+        
+        didSet{
+            contentView?.backgroundColor = firstColor
+            borderView?.layer.borderColor = firstColor.cgColor
+        }
+    }
+    var midColor = UIColor.red{
+        
+        didSet{
+            circleView?.strokeColor = midColor
+        }
+    }
+    var lastColor = UIColor.yellow
+    //开始变圆动画持续时间
+    var firstDuation: CFTimeInterval?
+    //进度持续时间
+    var midDuation: CFTimeInterval?
+    //恢复原形状持续时间
+    var lastDuation: CFTimeInterval?
     
-    //内容视图
-    var contentView: UIView?
-    //边框视图
-    var borderView: UIView?
     //标题
     var titleLabel: UILabel?
+    //内容视图
+    private var contentView: UIView?
+    //边框视图
+    private var borderView: UIView?
     //展示进度的视图
-    var circleView: WGCircleAniView?
+    private var circleView: WGCircleAniView?
 
-    var btnX: CGFloat = 0;
-    var btnY: CGFloat = 0;
-    var btnW: CGFloat = 0;
-    var btnH: CGFloat = 0;
+    private var btnX: CGFloat = 0;
+    private var btnY: CGFloat = 0;
+    private var btnW: CGFloat = 0;
+    private var btnH: CGFloat = 0;
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,13 +54,13 @@ class WGButtnAniView: UIView {
         btnH = self.frame.size.height
         
         contentView = UIView(frame: CGRect(x: 0, y: 0, width: btnW, height: btnH))
-        contentView?.backgroundColor = startColor
+        contentView?.backgroundColor = firstColor
         self.addSubview(contentView!)
         
         borderView = UIView(frame: CGRect(x: 0, y: 0, width: btnW, height: btnH))
         borderView?.backgroundColor = UIColor.clear
         borderView?.layer.borderWidth = 3
-        borderView?.layer.borderColor = startColor.cgColor
+        borderView?.layer.borderColor = firstColor.cgColor
         self.addSubview(borderView!)
         
         titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: btnW, height: btnH))
@@ -54,6 +72,7 @@ class WGButtnAniView: UIView {
         self.addSubview(titleLabel!)
         
         circleView = WGCircleAniView(frame: CGRect(x: 0, y: 0, width: btnW, height: btnH))
+        circleView?.strokeColor = midColor
         circleView?.wgCircleAniViewDelegate = self
         self.addSubview(circleView!)
     }
@@ -72,13 +91,14 @@ class WGButtnAniView: UIView {
         return ani
     }
     
-    func startAnimation() {
+    func startAnimation(duation: CFTimeInterval) {
         
         /*
          由 按钮->透明的灰色框  动画动画可拆解为两部分
          一:contentView渐变成一个圆且淡出
          二:borderView渐变成一个圆框且变成灰色
          */
+        self.firstDuation = duation
         self.isUserInteractionEnabled = false
         titleLabel?.isHidden = true
         //调整大小
@@ -94,7 +114,7 @@ class WGButtnAniView: UIView {
         //动画组:contentView渐变成一个圆且淡出
         let conAniGroup = CAAnimationGroup()
         conAniGroup.animations = [boundsAni, cornerRadiusAni, opacityAni]
-        conAniGroup.duration = 1
+        conAniGroup.duration = self.firstDuation ?? 1
         conAniGroup.repeatCount = 1
         conAniGroup.fillMode = .forwards
         conAniGroup.isRemovedOnCompletion = false
@@ -107,7 +127,7 @@ class WGButtnAniView: UIView {
         //动画组:borderView渐变成一个圆框且变成灰色
         let borAniGroup = CAAnimationGroup()
         borAniGroup.animations = [boundsAni, cornerRadiusAni, borderColorAni]
-        borAniGroup.duration = 1
+        borAniGroup.duration = self.firstDuation ?? 1
         borAniGroup.repeatCount = 1
         borAniGroup.fillMode = .forwards
         borAniGroup.isRemovedOnCompletion = false
@@ -118,8 +138,9 @@ class WGButtnAniView: UIView {
         
     }
     
-    func startAnimationReset() {
+    func startAnimationReset(duation: CFTimeInterval) {
         
+        self.lastDuation = duation
         self.isUserInteractionEnabled = false
         //调整大小
         let fromValue = NSValue(cgRect: CGRect(x: btnX+(btnW-btnH)/2, y: btnH, width: btnH, height: btnH))
@@ -133,12 +154,12 @@ class WGButtnAniView: UIView {
         let opacityAni = getBasicAnimation(keyPath: "opacity", fromValue: nil, toValue: 1)
         
         //改变下背景色,区别已完成
-        let backGroundColorAni = getBasicAnimation(keyPath: "backgroundColor", fromValue: nil, toValue: finishColor.cgColor)
+        let backGroundColorAni = getBasicAnimation(keyPath: "backgroundColor", fromValue: nil, toValue: lastColor.cgColor)
         
         //动画组:contentView渐变成原来形状且改变背景色
         let conAniGroup = CAAnimationGroup()
         conAniGroup.animations = [boundsAni, cornerRadiusAni, opacityAni, backGroundColorAni]
-        conAniGroup.duration = 3
+        conAniGroup.duration = self.lastDuation ?? 1
         conAniGroup.repeatCount = 1
         conAniGroup.fillMode = .forwards
         conAniGroup.isRemovedOnCompletion = false
@@ -146,12 +167,12 @@ class WGButtnAniView: UIView {
         contentView?.layer.add(conAniGroup, forKey: nil)
         
         //边框颜色渐变
-        let borderColorAni = getBasicAnimation(keyPath: "borderColor", fromValue: nil, toValue: finishColor.cgColor)
+        let borderColorAni = getBasicAnimation(keyPath: "borderColor", fromValue: nil, toValue: lastColor.cgColor)
         
         //动画组:borderView由灰色框恢复为原形状
         let borAniGroup = CAAnimationGroup()
         borAniGroup.animations = [boundsAni, cornerRadiusAni, borderColorAni]
-        borAniGroup.duration = 3
+        borAniGroup.duration = self.lastDuation ?? 1
         borAniGroup.repeatCount = 1
         borAniGroup.fillMode = .forwards
         borAniGroup.isRemovedOnCompletion = false
@@ -174,8 +195,8 @@ extension WGButtnAniView: CAAnimationDelegate{
             let aniType01 = anim.value(forKey: "startAnimationResetKey")
             if let type = aniType {
                 if (type as! NSString).isEqual(to: "startAnimationValue"){
-                    //开始进度动画
-                    circleView?.startCircleAnimation()
+                    //进度动画
+                    circleView?.startCircleAnimation(duation: midDuation ?? 1)
                 }
             }else if let type = aniType01 {
                 
@@ -196,6 +217,6 @@ extension WGButtnAniView: WGCircleAniViewDelegate{
     func circleAniStop() {
         //还原之前形状
         circleView?.removeFromSuperview()
-        startAnimationReset()
+        startAnimationReset(duation: self.lastDuation ?? 1)
     }
 }
