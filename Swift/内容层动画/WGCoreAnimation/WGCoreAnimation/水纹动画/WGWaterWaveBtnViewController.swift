@@ -16,6 +16,7 @@ class WGWaterWaveBtnViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.white
+        title = "水纹动画"
         
         btn = WGWaterWaveBtn(frame: CGRect(x: 20, y: 100, width: WgWith-20*2, height: 50))
         btn.setTitle("点我", for: .normal)

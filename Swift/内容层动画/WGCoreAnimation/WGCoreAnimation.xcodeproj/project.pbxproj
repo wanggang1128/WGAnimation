@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		321DF40E2270033800739C50 /* WGCircleAniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DF40D2270033800739C50 /* WGCircleAniView.swift */; };
+		321DF4102270035700739C50 /* WGButtnAniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DF40F2270035700739C50 /* WGButtnAniView.swift */; };
+		321DF4122270294600739C50 /* WGCircleBtnAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DF4112270294600739C50 /* WGCircleBtnAniViewController.swift */; };
 		322ACCD5226EA949009BF1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACCD4226EA949009BF1CE /* AppDelegate.swift */; };
 		322ACCD7226EA949009BF1CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACCD6226EA949009BF1CE /* ViewController.swift */; };
 		322ACCDC226EA94A009BF1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322ACCDB226EA94A009BF1CE /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		321DF40D2270033800739C50 /* WGCircleAniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCircleAniView.swift; sourceTree = "<group>"; };
+		321DF40F2270035700739C50 /* WGButtnAniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGButtnAniView.swift; sourceTree = "<group>"; };
+		321DF4112270294600739C50 /* WGCircleBtnAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCircleBtnAniViewController.swift; sourceTree = "<group>"; };
 		322ACCD1226EA949009BF1CE /* WGCoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGCoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		322ACCD4226EA949009BF1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		322ACCD6226EA949009BF1CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		321DF40C227002B500739C50 /* 渐进圆环效果 */ = {
+			isa = PBXGroup;
+			children = (
+				321DF40D2270033800739C50 /* WGCircleAniView.swift */,
+				321DF40F2270035700739C50 /* WGButtnAniView.swift */,
+				321DF4112270294600739C50 /* WGCircleBtnAniViewController.swift */,
+			);
+			path = "渐进圆环效果";
+			sourceTree = "<group>";
+		};
 		322ACCC8226EA948009BF1CE = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +121,7 @@
 		322ACCD3226EA949009BF1CE /* WGCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				321DF40C227002B500739C50 /* 渐进圆环效果 */,
 				322ACD11226F03CE009BF1CE /* 水纹动画 */,
 				322ACD07226EAA99009BF1CE /* 基础和关键帧动画 */,
 				322ACD02226EA9F3009BF1CE /* main */,
@@ -295,9 +312,12 @@
 				322ACD06226EAA1A009BF1CE /* WGSwiftProjectHeader.swift in Sources */,
 				322ACD13226F0435009BF1CE /* WGWaterWaveBtn.swift in Sources */,
 				322ACD09226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift in Sources */,
+				321DF40E2270033800739C50 /* WGCircleAniView.swift in Sources */,
+				321DF4102270035700739C50 /* WGButtnAniView.swift in Sources */,
 				322ACCD7226EA949009BF1CE /* ViewController.swift in Sources */,
 				322ACCD5226EA949009BF1CE /* AppDelegate.swift in Sources */,
 				322ACD05226EAA1A009BF1CE /* UIView_WGFrame.swift in Sources */,
+				321DF4122270294600739C50 /* WGCircleBtnAniViewController.swift in Sources */,
 				322ACD15226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
