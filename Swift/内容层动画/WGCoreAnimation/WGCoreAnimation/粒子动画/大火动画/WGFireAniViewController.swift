@@ -14,7 +14,7 @@ class WGFireAniViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.black
-        title = "火动画"
+        title = "大火动画"
         
         //粒子发射器
         let emitterLay = CAEmitterLayer()
@@ -44,7 +44,7 @@ class WGFireAniViewController: UIViewController {
         emitterCell.scaleSpeed = 1.2
         //火苗颜色
         emitterCell.color = UIColor(red: 0.8 ,green: 0.4 ,blue:0.2 ,alpha:0.1).cgColor
-        emitterCell.contents = UIImage(named: "fire.png")!.cgImage
+        emitterCell.contents = UIImage(named: "fire.png")?.cgImage
         
         emitterLay.emitterCells = [emitterCell];
         emitterLay.setValue(500, forKeyPath: "emitterCells.fire.birthRate")
