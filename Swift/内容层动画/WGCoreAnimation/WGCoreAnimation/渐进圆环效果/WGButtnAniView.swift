@@ -10,6 +10,7 @@ import UIKit
 
 class WGButtnAniView: UIView {
 
+    //开始变圆动画时颜色
     var firstColor = UIColor.cyan{
         
         didSet{
@@ -17,13 +18,16 @@ class WGButtnAniView: UIView {
             borderView?.layer.borderColor = firstColor.cgColor
         }
     }
+    //圆环进度颜色
     var midColor = UIColor.red{
         
         didSet{
             circleView?.strokeColor = midColor
         }
     }
+    //恢复后颜色
     var lastColor = UIColor.yellow
+    
     //开始变圆动画持续时间
     var firstDuation: CFTimeInterval?
     //进度持续时间
