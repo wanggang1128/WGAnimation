@@ -21,6 +21,8 @@
 		322ACD09226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD08226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift */; };
 		322ACD13226F0435009BF1CE /* WGWaterWaveBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD12226F0435009BF1CE /* WGWaterWaveBtn.swift */; };
 		322ACD15226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD14226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift */; };
+		323C6C66227FFBD9003C8359 /* WGSnowAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6C65227FFBD9003C8359 /* WGSnowAniViewController.swift */; };
+		323C6C68228000BC003C8359 /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 323C6C67228000BC003C8359 /* snow.png */; };
 		3251F260227189E10075498E /* WGFireAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251F25F227189E10075498E /* WGFireAniViewController.swift */; };
 		3251F26222718D1C0075498E /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 3251F26122718D1C0075498E /* fire.png */; };
 		3251F264227196930075498E /* WGNeonAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251F263227196930075498E /* WGNeonAniViewController.swift */; };
@@ -65,6 +67,8 @@
 		322ACD08226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCALayerAnimationViewController.swift; sourceTree = "<group>"; };
 		322ACD12226F0435009BF1CE /* WGWaterWaveBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGWaterWaveBtn.swift; sourceTree = "<group>"; };
 		322ACD14226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGWaterWaveBtnViewController.swift; sourceTree = "<group>"; };
+		323C6C65227FFBD9003C8359 /* WGSnowAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGSnowAniViewController.swift; sourceTree = "<group>"; };
+		323C6C67228000BC003C8359 /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
 		3251F25F227189E10075498E /* WGFireAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGFireAniViewController.swift; sourceTree = "<group>"; };
 		3251F26122718D1C0075498E /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		3251F263227196930075498E /* WGNeonAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGNeonAniViewController.swift; sourceTree = "<group>"; };
@@ -187,9 +191,19 @@
 			path = "水纹动画";
 			sourceTree = "<group>";
 		};
+		323C6C64227FFBB9003C8359 /* 大雪效果 */ = {
+			isa = PBXGroup;
+			children = (
+				323C6C65227FFBD9003C8359 /* WGSnowAniViewController.swift */,
+				323C6C67228000BC003C8359 /* snow.png */,
+			);
+			path = "大雪效果";
+			sourceTree = "<group>";
+		};
 		3251F25C2271892E0075498E /* 粒子动画 */ = {
 			isa = PBXGroup;
 			children = (
+				323C6C64227FFBB9003C8359 /* 大雪效果 */,
 				3251F25E227189960075498E /* 霓虹效果 */,
 				3251F25D2271898C0075498E /* 大火动画 */,
 			);
@@ -320,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3251F2662271977C0075498E /* nenolight.png in Resources */,
+				323C6C68228000BC003C8359 /* snow.png in Resources */,
 				322ACCDF226EA94A009BF1CE /* LaunchScreen.storyboard in Resources */,
 				322ACCDC226EA94A009BF1CE /* Assets.xcassets in Resources */,
 				3251F26222718D1C0075498E /* fire.png in Resources */,
@@ -352,6 +367,7 @@
 				322ACD09226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift in Sources */,
 				321DF40E2270033800739C50 /* WGCircleAniView.swift in Sources */,
 				321DF4102270035700739C50 /* WGButtnAniView.swift in Sources */,
+				323C6C66227FFBD9003C8359 /* WGSnowAniViewController.swift in Sources */,
 				3251F264227196930075498E /* WGNeonAniViewController.swift in Sources */,
 				322ACCD7226EA949009BF1CE /* ViewController.swift in Sources */,
 				322ACCD5226EA949009BF1CE /* AppDelegate.swift in Sources */,
