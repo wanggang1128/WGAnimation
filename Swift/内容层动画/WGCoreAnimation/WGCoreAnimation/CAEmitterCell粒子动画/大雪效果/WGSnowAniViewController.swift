@@ -40,8 +40,8 @@ class WGSnowAniViewController: UIViewController {
         //粒子透明速度
         emitterCell.alphaSpeed = -0.01;
         //粒子速度
-        emitterCell.velocity=80;
-        emitterCell.velocityRange=50;
+        emitterCell.velocity = 80;
+        emitterCell.velocityRange = 50;
         //设置角度
         emitterCell.emissionRange = CGFloat(Double.pi);
         //设置粒子旋转角速度

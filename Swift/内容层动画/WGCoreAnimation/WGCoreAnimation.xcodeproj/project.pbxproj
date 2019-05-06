@@ -23,6 +23,8 @@
 		322ACD15226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322ACD14226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift */; };
 		323C6C66227FFBD9003C8359 /* WGSnowAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6C65227FFBD9003C8359 /* WGSnowAniViewController.swift */; };
 		323C6C68228000BC003C8359 /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 323C6C67228000BC003C8359 /* snow.png */; };
+		323C6C6C22800683003C8359 /* WGScanAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6C6B22800683003C8359 /* WGScanAniViewController.swift */; };
+		323C6C6E22802E7D003C8359 /* WGBeatAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323C6C6D22802E7D003C8359 /* WGBeatAniViewController.swift */; };
 		3251F260227189E10075498E /* WGFireAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251F25F227189E10075498E /* WGFireAniViewController.swift */; };
 		3251F26222718D1C0075498E /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 3251F26122718D1C0075498E /* fire.png */; };
 		3251F264227196930075498E /* WGNeonAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251F263227196930075498E /* WGNeonAniViewController.swift */; };
@@ -69,6 +71,8 @@
 		322ACD14226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGWaterWaveBtnViewController.swift; sourceTree = "<group>"; };
 		323C6C65227FFBD9003C8359 /* WGSnowAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGSnowAniViewController.swift; sourceTree = "<group>"; };
 		323C6C67228000BC003C8359 /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
+		323C6C6B22800683003C8359 /* WGScanAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGScanAniViewController.swift; sourceTree = "<group>"; };
+		323C6C6D22802E7D003C8359 /* WGBeatAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGBeatAniViewController.swift; sourceTree = "<group>"; };
 		3251F25F227189E10075498E /* WGFireAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGFireAniViewController.swift; sourceTree = "<group>"; };
 		3251F26122718D1C0075498E /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		3251F263227196930075498E /* WGNeonAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGNeonAniViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +137,8 @@
 		322ACCD3226EA949009BF1CE /* WGCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				3251F25C2271892E0075498E /* 粒子动画 */,
+				323C6C692280064A003C8359 /* CAGradientLayer动画 */,
+				3251F25C2271892E0075498E /* CAEmitterCell粒子动画 */,
 				321DF40C227002B500739C50 /* 渐进圆环效果 */,
 				322ACD11226F03CE009BF1CE /* 水纹动画 */,
 				322ACD07226EAA99009BF1CE /* 基础和关键帧动画 */,
@@ -200,14 +205,39 @@
 			path = "大雪效果";
 			sourceTree = "<group>";
 		};
-		3251F25C2271892E0075498E /* 粒子动画 */ = {
+		323C6C692280064A003C8359 /* CAGradientLayer动画 */ = {
+			isa = PBXGroup;
+			children = (
+				323C6C6F22802E83003C8359 /* 跳动动画 */,
+				323C6C6A2280065A003C8359 /* 扫描动画 */,
+			);
+			path = "CAGradientLayer动画";
+			sourceTree = "<group>";
+		};
+		323C6C6A2280065A003C8359 /* 扫描动画 */ = {
+			isa = PBXGroup;
+			children = (
+				323C6C6B22800683003C8359 /* WGScanAniViewController.swift */,
+			);
+			path = "扫描动画";
+			sourceTree = "<group>";
+		};
+		323C6C6F22802E83003C8359 /* 跳动动画 */ = {
+			isa = PBXGroup;
+			children = (
+				323C6C6D22802E7D003C8359 /* WGBeatAniViewController.swift */,
+			);
+			path = "跳动动画";
+			sourceTree = "<group>";
+		};
+		3251F25C2271892E0075498E /* CAEmitterCell粒子动画 */ = {
 			isa = PBXGroup;
 			children = (
 				323C6C64227FFBB9003C8359 /* 大雪效果 */,
 				3251F25E227189960075498E /* 霓虹效果 */,
 				3251F25D2271898C0075498E /* 大火动画 */,
 			);
-			path = "粒子动画";
+			path = "CAEmitterCell粒子动画";
 			sourceTree = "<group>";
 		};
 		3251F25D2271898C0075498E /* 大火动画 */ = {
@@ -370,9 +400,11 @@
 				323C6C66227FFBD9003C8359 /* WGSnowAniViewController.swift in Sources */,
 				3251F264227196930075498E /* WGNeonAniViewController.swift in Sources */,
 				322ACCD7226EA949009BF1CE /* ViewController.swift in Sources */,
+				323C6C6C22800683003C8359 /* WGScanAniViewController.swift in Sources */,
 				322ACCD5226EA949009BF1CE /* AppDelegate.swift in Sources */,
 				322ACD05226EAA1A009BF1CE /* UIView_WGFrame.swift in Sources */,
 				321DF4122270294600739C50 /* WGCircleBtnAniViewController.swift in Sources */,
+				323C6C6E22802E7D003C8359 /* WGBeatAniViewController.swift in Sources */,
 				3251F260227189E10075498E /* WGFireAniViewController.swift in Sources */,
 				322ACD15226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift in Sources */,
 			);
