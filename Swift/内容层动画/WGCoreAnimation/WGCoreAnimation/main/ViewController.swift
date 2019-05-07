@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: WgWith, height: WgHeight))
-    let dataArr = ["CALayer层动画", "水纹动画", "渐进圆环动画", "大火动画", "霓虹动画", "大雪动画", "扫描动画", "跳动动画"]
+    let dataArr = ["CALayer层动画", "水纹动画", "渐进圆环动画", "大火动画", "霓虹动画", "大雪动画", "扫描动画", "跳动动画", "图表动画"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +82,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
             
         case 7:
             let vc = WGBeatAniViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case 8:
+            let vc = WGChartAniViewController()
             self.navigationController?.pushViewController(vc, animated: true)
             
         default:

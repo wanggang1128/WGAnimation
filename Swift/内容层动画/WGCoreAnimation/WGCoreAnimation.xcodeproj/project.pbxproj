@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3217A8A8228165E5004DA202 /* WGChartAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217A8A7228165E5004DA202 /* WGChartAniViewController.swift */; };
+		3217A8AA2281843F004DA202 /* WGLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217A8A92281843F004DA202 /* WGLineChartView.swift */; };
 		321DF40E2270033800739C50 /* WGCircleAniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DF40D2270033800739C50 /* WGCircleAniView.swift */; };
 		321DF4102270035700739C50 /* WGButtnAniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DF40F2270035700739C50 /* WGButtnAniView.swift */; };
 		321DF4122270294600739C50 /* WGCircleBtnAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DF4112270294600739C50 /* WGCircleBtnAniViewController.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3217A8A7228165E5004DA202 /* WGChartAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGChartAniViewController.swift; sourceTree = "<group>"; };
+		3217A8A92281843F004DA202 /* WGLineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGLineChartView.swift; sourceTree = "<group>"; };
 		321DF40D2270033800739C50 /* WGCircleAniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCircleAniView.swift; sourceTree = "<group>"; };
 		321DF40F2270035700739C50 /* WGButtnAniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGButtnAniView.swift; sourceTree = "<group>"; };
 		321DF4112270294600739C50 /* WGCircleBtnAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCircleBtnAniViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3217A8A622816598004DA202 /* CAShapeLayer动画 */ = {
+			isa = PBXGroup;
+			children = (
+				3217A8A7228165E5004DA202 /* WGChartAniViewController.swift */,
+				3217A8A92281843F004DA202 /* WGLineChartView.swift */,
+			);
+			path = "CAShapeLayer动画";
+			sourceTree = "<group>";
+		};
 		321DF40C227002B500739C50 /* 渐进圆环效果 */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +150,7 @@
 		322ACCD3226EA949009BF1CE /* WGCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				3217A8A622816598004DA202 /* CAShapeLayer动画 */,
 				323C6C692280064A003C8359 /* CAGradientLayer动画 */,
 				3251F25C2271892E0075498E /* CAEmitterCell粒子动画 */,
 				321DF40C227002B500739C50 /* 渐进圆环效果 */,
@@ -392,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3217A8A8228165E5004DA202 /* WGChartAniViewController.swift in Sources */,
 				322ACD06226EAA1A009BF1CE /* WGSwiftProjectHeader.swift in Sources */,
 				322ACD13226F0435009BF1CE /* WGWaterWaveBtn.swift in Sources */,
 				322ACD09226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift in Sources */,
@@ -403,6 +418,7 @@
 				323C6C6C22800683003C8359 /* WGScanAniViewController.swift in Sources */,
 				322ACCD5226EA949009BF1CE /* AppDelegate.swift in Sources */,
 				322ACD05226EAA1A009BF1CE /* UIView_WGFrame.swift in Sources */,
+				3217A8AA2281843F004DA202 /* WGLineChartView.swift in Sources */,
 				321DF4122270294600739C50 /* WGCircleBtnAniViewController.swift in Sources */,
 				323C6C6E22802E7D003C8359 /* WGBeatAniViewController.swift in Sources */,
 				3251F260227189E10075498E /* WGFireAniViewController.swift in Sources */,
