@@ -31,6 +31,7 @@
 		3251F26222718D1C0075498E /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 3251F26122718D1C0075498E /* fire.png */; };
 		3251F264227196930075498E /* WGNeonAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251F263227196930075498E /* WGNeonAniViewController.swift */; };
 		3251F2662271977C0075498E /* nenolight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3251F2652271977B0075498E /* nenolight.png */; };
+		32EFD5012282B2C10037DE9B /* WGBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFD5002282B2C10037DE9B /* WGBarChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		3251F26122718D1C0075498E /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		3251F263227196930075498E /* WGNeonAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGNeonAniViewController.swift; sourceTree = "<group>"; };
 		3251F2652271977B0075498E /* nenolight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nenolight.png; sourceTree = "<group>"; };
+		32EFD5002282B2C10037DE9B /* WGBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGBarChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				3217A8A7228165E5004DA202 /* WGChartAniViewController.swift */,
 				3217A8A92281843F004DA202 /* WGLineChartView.swift */,
+				32EFD5002282B2C10037DE9B /* WGBarChartView.swift */,
 			);
 			path = "CAShapeLayer动画";
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3217A8A8228165E5004DA202 /* WGChartAniViewController.swift in Sources */,
+				32EFD5012282B2C10037DE9B /* WGBarChartView.swift in Sources */,
 				322ACD06226EAA1A009BF1CE /* WGSwiftProjectHeader.swift in Sources */,
 				322ACD13226F0435009BF1CE /* WGWaterWaveBtn.swift in Sources */,
 				322ACD09226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift in Sources */,

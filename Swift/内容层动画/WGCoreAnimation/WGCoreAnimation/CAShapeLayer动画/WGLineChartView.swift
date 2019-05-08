@@ -55,7 +55,7 @@ class WGLineChartView: UIView {
         ani.duration = 2.0
     }
 
-    func drawLineChart() {
+    func chartAniStart() {
         
         lineChart.strokeEnd = 1.0
         lineChart.add(ani, forKey: nil)

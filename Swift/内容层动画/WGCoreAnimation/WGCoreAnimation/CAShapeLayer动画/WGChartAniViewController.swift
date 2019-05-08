@@ -11,6 +11,7 @@ import UIKit
 class WGChartAniViewController: UIViewController {
 
     var lineChart: WGLineChartView!
+    var barChart: WGBarChartView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +20,9 @@ class WGChartAniViewController: UIViewController {
         title = "图表动画"
         
         lineChart = WGLineChartView(frame: self.view.bounds)
+        barChart = WGBarChartView(frame: CGRect(x: 0, y: WgHeight/2, width: WgWith, height: WgHeight))
         view.addSubview(lineChart)
+        view.addSubview(barChart)
         buildView()
     }
     
@@ -49,10 +52,18 @@ class WGChartAniViewController: UIViewController {
         lineBtn.addTarget(self, action: #selector(lineBtnClicked), for: .touchUpInside)
         view.addSubview(lineBtn)
         
+        //      BarChart
+        for i in 1...5{
+            let xAxesTitle:String = "SEP"+"\(i)"
+            let xAxesLabel:UILabel = UILabel(frame: CGRect(x: 40+(CGFloat(i)-1)*70,y: 600, width: 50, height: 20))
+            xAxesLabel.text = xAxesTitle
+            self.view.addSubview(xAxesLabel)
+        }
     }
     
     @objc func lineBtnClicked() {
         
-        lineChart.drawLineChart()
+        lineChart.chartAniStart()
+        barChart.barAniStart()
     }
 }
