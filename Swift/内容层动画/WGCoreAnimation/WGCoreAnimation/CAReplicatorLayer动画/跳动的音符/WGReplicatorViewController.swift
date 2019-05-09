@@ -14,6 +14,7 @@ class WGReplicatorViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.black
+        title = "跳动音符"
         
         let replicatorLayer = CAReplicatorLayer()
         replicatorLayer.frame = CGRect(x: 0, y: 0, width: WgWith, height: 200)

@@ -32,6 +32,10 @@
 		3251F264227196930075498E /* WGNeonAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251F263227196930075498E /* WGNeonAniViewController.swift */; };
 		3251F2662271977C0075498E /* nenolight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3251F2652271977B0075498E /* nenolight.png */; };
 		32605C4A2283C18000118B4D /* WGReplicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32605C492283C18000118B4D /* WGReplicatorViewController.swift */; };
+		32605C4D2283D09700118B4D /* WGCoverFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32605C4C2283D09700118B4D /* WGCoverFlowViewController.swift */; };
+		32605C4F2283F44700118B4D /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32605C4E2283F44700118B4D /* 0.jpg */; };
+		32605C512283F44E00118B4D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32605C502283F44E00118B4D /* 1.jpg */; };
+		32605C532283F45600118B4D /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32605C522283F45600118B4D /* 2.jpg */; };
 		32EFD5012282B2C10037DE9B /* WGBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFD5002282B2C10037DE9B /* WGBarChartView.swift */; };
 		32EFD5042282CEA80037DE9B /* WGEarthAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFD5032282CEA80037DE9B /* WGEarthAniViewController.swift */; };
 		32EFD5072282D2FD0037DE9B /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EFD5062282D2FD0037DE9B /* earth.png */; };
@@ -87,6 +91,10 @@
 		3251F263227196930075498E /* WGNeonAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGNeonAniViewController.swift; sourceTree = "<group>"; };
 		3251F2652271977B0075498E /* nenolight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nenolight.png; sourceTree = "<group>"; };
 		32605C492283C18000118B4D /* WGReplicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGReplicatorViewController.swift; sourceTree = "<group>"; };
+		32605C4C2283D09700118B4D /* WGCoverFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGCoverFlowViewController.swift; sourceTree = "<group>"; };
+		32605C4E2283F44700118B4D /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		32605C502283F44E00118B4D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		32605C522283F45600118B4D /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		32EFD5002282B2C10037DE9B /* WGBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGBarChartView.swift; sourceTree = "<group>"; };
 		32EFD5032282CEA80037DE9B /* WGEarthAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGEarthAniViewController.swift; sourceTree = "<group>"; };
 		32EFD5062282D2FD0037DE9B /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
@@ -161,6 +169,7 @@
 		322ACCD3226EA949009BF1CE /* WGCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				32605C4B2283D06A00118B4D /* CoverFlow效果 */,
 				32EFD5022282CE720037DE9B /* CAReplicatorLayer动画 */,
 				3217A8A622816598004DA202 /* CAShapeLayer动画 */,
 				323C6C692280064A003C8359 /* CAGradientLayer动画 */,
@@ -292,6 +301,17 @@
 			path = "跳动的音符";
 			sourceTree = "<group>";
 		};
+		32605C4B2283D06A00118B4D /* CoverFlow效果 */ = {
+			isa = PBXGroup;
+			children = (
+				32605C4C2283D09700118B4D /* WGCoverFlowViewController.swift */,
+				32605C4E2283F44700118B4D /* 0.jpg */,
+				32605C502283F44E00118B4D /* 1.jpg */,
+				32605C522283F45600118B4D /* 2.jpg */,
+			);
+			path = "CoverFlow效果";
+			sourceTree = "<group>";
+		};
 		32EFD5022282CE720037DE9B /* CAReplicatorLayer动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,9 +438,12 @@
 			files = (
 				3251F2662271977C0075498E /* nenolight.png in Resources */,
 				32EFD5092282D3070037DE9B /* sun.png in Resources */,
+				32605C532283F45600118B4D /* 2.jpg in Resources */,
 				323C6C68228000BC003C8359 /* snow.png in Resources */,
 				32EFD5072282D2FD0037DE9B /* earth.png in Resources */,
+				32605C4F2283F44700118B4D /* 0.jpg in Resources */,
 				322ACCDF226EA94A009BF1CE /* LaunchScreen.storyboard in Resources */,
+				32605C512283F44E00118B4D /* 1.jpg in Resources */,
 				322ACCDC226EA94A009BF1CE /* Assets.xcassets in Resources */,
 				3251F26222718D1C0075498E /* fire.png in Resources */,
 			);
@@ -448,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3217A8A8228165E5004DA202 /* WGChartAniViewController.swift in Sources */,
+				32605C4D2283D09700118B4D /* WGCoverFlowViewController.swift in Sources */,
 				32EFD5012282B2C10037DE9B /* WGBarChartView.swift in Sources */,
 				322ACD06226EAA1A009BF1CE /* WGSwiftProjectHeader.swift in Sources */,
 				322ACD13226F0435009BF1CE /* WGWaterWaveBtn.swift in Sources */,
