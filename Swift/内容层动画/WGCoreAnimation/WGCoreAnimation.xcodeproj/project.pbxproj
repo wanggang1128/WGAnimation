@@ -31,7 +31,11 @@
 		3251F26222718D1C0075498E /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 3251F26122718D1C0075498E /* fire.png */; };
 		3251F264227196930075498E /* WGNeonAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251F263227196930075498E /* WGNeonAniViewController.swift */; };
 		3251F2662271977C0075498E /* nenolight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3251F2652271977B0075498E /* nenolight.png */; };
+		32605C4A2283C18000118B4D /* WGReplicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32605C492283C18000118B4D /* WGReplicatorViewController.swift */; };
 		32EFD5012282B2C10037DE9B /* WGBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFD5002282B2C10037DE9B /* WGBarChartView.swift */; };
+		32EFD5042282CEA80037DE9B /* WGEarthAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EFD5032282CEA80037DE9B /* WGEarthAniViewController.swift */; };
+		32EFD5072282D2FD0037DE9B /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EFD5062282D2FD0037DE9B /* earth.png */; };
+		32EFD5092282D3070037DE9B /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 32EFD5082282D3070037DE9B /* sun.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +86,11 @@
 		3251F26122718D1C0075498E /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
 		3251F263227196930075498E /* WGNeonAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGNeonAniViewController.swift; sourceTree = "<group>"; };
 		3251F2652271977B0075498E /* nenolight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nenolight.png; sourceTree = "<group>"; };
+		32605C492283C18000118B4D /* WGReplicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGReplicatorViewController.swift; sourceTree = "<group>"; };
 		32EFD5002282B2C10037DE9B /* WGBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGBarChartView.swift; sourceTree = "<group>"; };
+		32EFD5032282CEA80037DE9B /* WGEarthAniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WGEarthAniViewController.swift; sourceTree = "<group>"; };
+		32EFD5062282D2FD0037DE9B /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
+		32EFD5082282D3070037DE9B /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +161,7 @@
 		322ACCD3226EA949009BF1CE /* WGCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				32EFD5022282CE720037DE9B /* CAReplicatorLayer动画 */,
 				3217A8A622816598004DA202 /* CAShapeLayer动画 */,
 				323C6C692280064A003C8359 /* CAGradientLayer动画 */,
 				3251F25C2271892E0075498E /* CAEmitterCell粒子动画 */,
@@ -275,6 +284,33 @@
 			path = "霓虹效果";
 			sourceTree = "<group>";
 		};
+		32605C482283BF6E00118B4D /* 跳动的音符 */ = {
+			isa = PBXGroup;
+			children = (
+				32605C492283C18000118B4D /* WGReplicatorViewController.swift */,
+			);
+			path = "跳动的音符";
+			sourceTree = "<group>";
+		};
+		32EFD5022282CE720037DE9B /* CAReplicatorLayer动画 */ = {
+			isa = PBXGroup;
+			children = (
+				32605C482283BF6E00118B4D /* 跳动的音符 */,
+				32EFD5052282CEB20037DE9B /* 地球公转 */,
+			);
+			path = "CAReplicatorLayer动画";
+			sourceTree = "<group>";
+		};
+		32EFD5052282CEB20037DE9B /* 地球公转 */ = {
+			isa = PBXGroup;
+			children = (
+				32EFD5032282CEA80037DE9B /* WGEarthAniViewController.swift */,
+				32EFD5062282D2FD0037DE9B /* earth.png */,
+				32EFD5082282D3070037DE9B /* sun.png */,
+			);
+			path = "地球公转";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,7 +417,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3251F2662271977C0075498E /* nenolight.png in Resources */,
+				32EFD5092282D3070037DE9B /* sun.png in Resources */,
 				323C6C68228000BC003C8359 /* snow.png in Resources */,
+				32EFD5072282D2FD0037DE9B /* earth.png in Resources */,
 				322ACCDF226EA94A009BF1CE /* LaunchScreen.storyboard in Resources */,
 				322ACCDC226EA94A009BF1CE /* Assets.xcassets in Resources */,
 				3251F26222718D1C0075498E /* fire.png in Resources */,
@@ -415,6 +453,7 @@
 				322ACD13226F0435009BF1CE /* WGWaterWaveBtn.swift in Sources */,
 				322ACD09226EAB4B009BF1CE /* WGCALayerAnimationViewController.swift in Sources */,
 				321DF40E2270033800739C50 /* WGCircleAniView.swift in Sources */,
+				32605C4A2283C18000118B4D /* WGReplicatorViewController.swift in Sources */,
 				321DF4102270035700739C50 /* WGButtnAniView.swift in Sources */,
 				323C6C66227FFBD9003C8359 /* WGSnowAniViewController.swift in Sources */,
 				3251F264227196930075498E /* WGNeonAniViewController.swift in Sources */,
@@ -424,6 +463,7 @@
 				322ACD05226EAA1A009BF1CE /* UIView_WGFrame.swift in Sources */,
 				3217A8AA2281843F004DA202 /* WGLineChartView.swift in Sources */,
 				321DF4122270294600739C50 /* WGCircleBtnAniViewController.swift in Sources */,
+				32EFD5042282CEA80037DE9B /* WGEarthAniViewController.swift in Sources */,
 				323C6C6E22802E7D003C8359 /* WGBeatAniViewController.swift in Sources */,
 				3251F260227189E10075498E /* WGFireAniViewController.swift in Sources */,
 				322ACD15226F0E26009BF1CE /* WGWaterWaveBtnViewController.swift in Sources */,

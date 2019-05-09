@@ -20,7 +20,7 @@ class WGChartAniViewController: UIViewController {
         title = "图表动画"
         
         lineChart = WGLineChartView(frame: self.view.bounds)
-        barChart = WGBarChartView(frame: CGRect(x: 0, y: WgHeight/2, width: WgWith, height: WgHeight))
+        barChart = WGBarChartView(frame: CGRect(x: 0, y: WgHeight/2, width: WgWith, height: WgHeight/2))
         view.addSubview(lineChart)
         view.addSubview(barChart)
         buildView()
@@ -54,10 +54,10 @@ class WGChartAniViewController: UIViewController {
         
         //      BarChart
         for i in 1...5{
-            let xAxesTitle:String = "SEP"+"\(i)"
-            let xAxesLabel:UILabel = UILabel(frame: CGRect(x: 40+(CGFloat(i)-1)*70,y: 600, width: 50, height: 20))
-            xAxesLabel.text = xAxesTitle
-            self.view.addSubview(xAxesLabel)
+            let title:String = "SEP"+"\(i)"
+            let label:UILabel = UILabel(frame: CGRect(x: 40+(CGFloat(i)-1)*70,y: 600, width: 50, height: 20))
+            label.text = title
+            self.view.addSubview(label)
         }
     }
     
