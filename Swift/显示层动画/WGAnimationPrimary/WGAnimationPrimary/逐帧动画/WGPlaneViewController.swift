@@ -9,7 +9,7 @@
 import UIKit
 
 class WGPlaneViewController: UIViewController {
-
+    
     var imgView: UIImageView!
     var index = 0
     var displayLink: CADisplayLink?
