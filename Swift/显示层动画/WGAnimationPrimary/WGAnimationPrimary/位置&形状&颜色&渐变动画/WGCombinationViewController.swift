@@ -19,7 +19,7 @@ class WGCombinationViewController: UIViewController {
         
         loginBtn = UIButton(frame: CGRect(x: -200, y: 200, width: WgWith-20*2, height: 30))
         loginBtn.backgroundColor = UIColor.cyan
-        loginBtn.setTitle("登录", for: .normal)
+        loginBtn.setTitle("点击", for: .normal)
         loginBtn.setTitleColor(UIColor.black, for: .normal)
         loginBtn.alpha = 0;
         loginBtn.addTarget(self, action: #selector(loginBtnClicked), for: .touchUpInside)

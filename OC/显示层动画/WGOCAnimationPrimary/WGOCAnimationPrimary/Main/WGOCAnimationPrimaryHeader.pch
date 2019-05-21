@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  WGOCAnimationPrimary
+//
+//  Created by wanggang on 2019/5/21.
+//  Copyright © 2019 bozhong. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "WGGlobDefine.h"
+#import "UIView+WGFrame.h"
+
+#endif /* PrefixHeader_pch */
