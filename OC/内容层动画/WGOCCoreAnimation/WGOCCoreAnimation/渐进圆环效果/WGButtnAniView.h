@@ -1,5 +1,5 @@
 //
-//  WGWaterWaveBtn.h
+//  WGButtnAniView.h
 //  WGOCCoreAnimation
 //
 //  Created by wanggang on 2019/5/22.
@@ -10,12 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WGWaterWaveBtn : UIButton
+@interface WGButtnAniView : UIView
 
-//水纹颜色
-@property (nonatomic, strong) UIColor *aniColor;
+@property (nonatomic, strong) UILabel *titleLab;
 
-- (void)startAniWithEvent:(UIEvent *)event;
+- (void)startAniDuation:(NSTimeInterval)duation;
 
 @end
 

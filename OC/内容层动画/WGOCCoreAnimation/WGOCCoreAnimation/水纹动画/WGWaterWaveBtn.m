@@ -11,6 +11,10 @@
 @interface WGWaterWaveBtn()
 
 @property (nonatomic, strong) NSTimer *timer;
+//水纹半径
+@property (nonatomic, assign) CGFloat viewRadius;
+//点击处
+@property (nonatomic, assign) CGPoint touchPoint;
 
 @end
 

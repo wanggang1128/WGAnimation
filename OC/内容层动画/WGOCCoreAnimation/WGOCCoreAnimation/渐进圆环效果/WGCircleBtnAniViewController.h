@@ -1,5 +1,5 @@
 //
-//  WGWaterWaveBtn.h
+//  WGCircleBtnAniViewController.h
 //  WGOCCoreAnimation
 //
 //  Created by wanggang on 2019/5/22.
@@ -10,12 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WGWaterWaveBtn : UIButton
-
-//水纹颜色
-@property (nonatomic, strong) UIColor *aniColor;
-
-- (void)startAniWithEvent:(UIEvent *)event;
+@interface WGCircleBtnAniViewController : UIViewController
 
 @end
 

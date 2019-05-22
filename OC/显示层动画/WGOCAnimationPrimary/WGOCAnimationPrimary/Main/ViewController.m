@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "WGCALayerAnimationViewController.h"
 #import "WGWaterWaveBtnViewController.h"
+#import "WGCircleBtnAniViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -59,6 +60,11 @@
         }
         case 1:{
             WGWaterWaveBtnViewController *vc = [[WGWaterWaveBtnViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 2:{
+            WGCircleBtnAniViewController *vc = [[WGCircleBtnAniViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

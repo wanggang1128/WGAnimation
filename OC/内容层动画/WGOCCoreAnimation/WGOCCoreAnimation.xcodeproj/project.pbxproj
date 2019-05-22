@@ -18,6 +18,9 @@
 		32470CBE2294E97400A62235 /* WGCALayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CBD2294E97400A62235 /* WGCALayerAnimationViewController.m */; };
 		32470CC22295250F00A62235 /* WGWaterWaveBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CC12295250F00A62235 /* WGWaterWaveBtnViewController.m */; };
 		32470CC52295253000A62235 /* WGWaterWaveBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CC42295253000A62235 /* WGWaterWaveBtn.m */; };
+		32470CC92295325100A62235 /* WGCircleBtnAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CC82295325100A62235 /* WGCircleBtnAniViewController.m */; };
+		32470CCC2295327C00A62235 /* WGButtnAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CCB2295327C00A62235 /* WGButtnAniView.m */; };
+		32470CCF2295329300A62235 /* WGCircleAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CCE2295329300A62235 /* WGCircleAniView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		32470CC12295250F00A62235 /* WGWaterWaveBtnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGWaterWaveBtnViewController.m; sourceTree = "<group>"; };
 		32470CC32295253000A62235 /* WGWaterWaveBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGWaterWaveBtn.h; sourceTree = "<group>"; };
 		32470CC42295253000A62235 /* WGWaterWaveBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGWaterWaveBtn.m; sourceTree = "<group>"; };
+		32470CC72295325100A62235 /* WGCircleBtnAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGCircleBtnAniViewController.h; sourceTree = "<group>"; };
+		32470CC82295325100A62235 /* WGCircleBtnAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGCircleBtnAniViewController.m; sourceTree = "<group>"; };
+		32470CCA2295327C00A62235 /* WGButtnAniView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGButtnAniView.h; sourceTree = "<group>"; };
+		32470CCB2295327C00A62235 /* WGButtnAniView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGButtnAniView.m; sourceTree = "<group>"; };
+		32470CCD2295329300A62235 /* WGCircleAniView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGCircleAniView.h; sourceTree = "<group>"; };
+		32470CCE2295329300A62235 /* WGCircleAniView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGCircleAniView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +122,7 @@
 		32470C7F2294E58200A62235 /* WGOCCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				32470CC62295322A00A62235 /* 渐进圆环效果 */,
 				32470CBF229524EE00A62235 /* 水纹动画 */,
 				32470CBB2294E94E00A62235 /* 基础和关键帧动画 */,
 				32470CB22294E5D600A62235 /* Main */,
@@ -175,6 +185,19 @@
 				32470CC42295253000A62235 /* WGWaterWaveBtn.m */,
 			);
 			path = "水纹动画";
+			sourceTree = "<group>";
+		};
+		32470CC62295322A00A62235 /* 渐进圆环效果 */ = {
+			isa = PBXGroup;
+			children = (
+				32470CC72295325100A62235 /* WGCircleBtnAniViewController.h */,
+				32470CC82295325100A62235 /* WGCircleBtnAniViewController.m */,
+				32470CCA2295327C00A62235 /* WGButtnAniView.h */,
+				32470CCB2295327C00A62235 /* WGButtnAniView.m */,
+				32470CCD2295329300A62235 /* WGCircleAniView.h */,
+				32470CCE2295329300A62235 /* WGCircleAniView.m */,
+			);
+			path = "渐进圆环效果";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +332,10 @@
 				32470CB62294E64C00A62235 /* UIView+WGFrame.m in Sources */,
 				32470C902294E58400A62235 /* main.m in Sources */,
 				32470CC22295250F00A62235 /* WGWaterWaveBtnViewController.m in Sources */,
+				32470CCF2295329300A62235 /* WGCircleAniView.m in Sources */,
+				32470CCC2295327C00A62235 /* WGButtnAniView.m in Sources */,
 				32470CC52295253000A62235 /* WGWaterWaveBtn.m in Sources */,
+				32470CC92295325100A62235 /* WGCircleBtnAniViewController.m in Sources */,
 				32470C822294E58200A62235 /* AppDelegate.m in Sources */,
 				32470CBE2294E97400A62235 /* WGCALayerAnimationViewController.m in Sources */,
 				32470CBA2294E74E00A62235 /* ViewController.m in Sources */,

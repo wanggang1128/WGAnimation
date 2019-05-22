@@ -20,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"水纹动画";
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     self.btn = [[WGWaterWaveBtn alloc] initWithFrame:CGRectMake(20, SCREEN_HEIGHT/2, SCREEN_WIDTH-40, 70)];
     _btn.backgroundColor = UIColor.redColor;
     [_btn setTitle:@"点我" forState:UIControlStateNormal];
