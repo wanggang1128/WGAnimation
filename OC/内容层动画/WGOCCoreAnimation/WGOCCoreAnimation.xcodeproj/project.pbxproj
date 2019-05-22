@@ -16,6 +16,8 @@
 		32470CB62294E64C00A62235 /* UIView+WGFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CB42294E64C00A62235 /* UIView+WGFrame.m */; };
 		32470CBA2294E74E00A62235 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CB92294E74E00A62235 /* ViewController.m */; };
 		32470CBE2294E97400A62235 /* WGCALayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CBD2294E97400A62235 /* WGCALayerAnimationViewController.m */; };
+		32470CC22295250F00A62235 /* WGWaterWaveBtnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CC12295250F00A62235 /* WGWaterWaveBtnViewController.m */; };
+		32470CC52295253000A62235 /* WGWaterWaveBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CC42295253000A62235 /* WGWaterWaveBtn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		32470CB92294E74E00A62235 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../显示层动画/WGOCAnimationPrimary/WGOCAnimationPrimary/Main/ViewController.m"; sourceTree = "<group>"; };
 		32470CBC2294E97400A62235 /* WGCALayerAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGCALayerAnimationViewController.h; sourceTree = "<group>"; };
 		32470CBD2294E97400A62235 /* WGCALayerAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGCALayerAnimationViewController.m; sourceTree = "<group>"; };
+		32470CC02295250F00A62235 /* WGWaterWaveBtnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGWaterWaveBtnViewController.h; sourceTree = "<group>"; };
+		32470CC12295250F00A62235 /* WGWaterWaveBtnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGWaterWaveBtnViewController.m; sourceTree = "<group>"; };
+		32470CC32295253000A62235 /* WGWaterWaveBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGWaterWaveBtn.h; sourceTree = "<group>"; };
+		32470CC42295253000A62235 /* WGWaterWaveBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGWaterWaveBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		32470C7F2294E58200A62235 /* WGOCCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				32470CBF229524EE00A62235 /* 水纹动画 */,
 				32470CBB2294E94E00A62235 /* 基础和关键帧动画 */,
 				32470CB22294E5D600A62235 /* Main */,
 				32470C892294E58300A62235 /* Assets.xcassets */,
@@ -157,6 +164,17 @@
 				32470CBD2294E97400A62235 /* WGCALayerAnimationViewController.m */,
 			);
 			path = "基础和关键帧动画";
+			sourceTree = "<group>";
+		};
+		32470CBF229524EE00A62235 /* 水纹动画 */ = {
+			isa = PBXGroup;
+			children = (
+				32470CC02295250F00A62235 /* WGWaterWaveBtnViewController.h */,
+				32470CC12295250F00A62235 /* WGWaterWaveBtnViewController.m */,
+				32470CC32295253000A62235 /* WGWaterWaveBtn.h */,
+				32470CC42295253000A62235 /* WGWaterWaveBtn.m */,
+			);
+			path = "水纹动画";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +308,8 @@
 			files = (
 				32470CB62294E64C00A62235 /* UIView+WGFrame.m in Sources */,
 				32470C902294E58400A62235 /* main.m in Sources */,
+				32470CC22295250F00A62235 /* WGWaterWaveBtnViewController.m in Sources */,
+				32470CC52295253000A62235 /* WGWaterWaveBtn.m in Sources */,
 				32470C822294E58200A62235 /* AppDelegate.m in Sources */,
 				32470CBE2294E97400A62235 /* WGCALayerAnimationViewController.m in Sources */,
 				32470CBA2294E74E00A62235 /* ViewController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "WGCALayerAnimationViewController.h"
+#import "WGWaterWaveBtnViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -54,7 +55,11 @@
         case 0:{
             WGCALayerAnimationViewController *vc = [[WGCALayerAnimationViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
-           
+            break;
+        }
+        case 1:{
+            WGWaterWaveBtnViewController *vc = [[WGWaterWaveBtnViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         default:
