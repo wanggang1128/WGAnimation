@@ -7,15 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "WGGeometryAniViewController.h"
-#import "WGLocationAniViewController.h"
-#import "WGAlphaAniViewController.h"
-#import "WGCombinationViewController.h"
-#import "WGZoomViewController.h"
-#import "WGTurnPlateViewController.h"
-#import "WGAirportViewController.h"
-#import "WGTurnplateKeyViewController.h"
-#import "WGPlaneViewController.h"
+#import "WGCALayerAnimationViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -31,7 +23,7 @@
     
     self.title = @"列表";
     
-    self.dataArr = @[@"几何形状动画", @"位置形状动画", @"淡入淡出动画和颜色", @"综合位置&形状&颜色&渐变动画", @"旋转&缩放&平移", @"旋转实现-简单转盘", @"关键帧动画-飞机降落", @"关键帧动画-简单转盘", @"逐帧动画-飞机"];
+    self.dataArr = @[@"CALayer层动画", @"水纹动画", @"渐进圆环动画", @"大火动画", @"霓虹动画", @"大雪动画", @"扫描动画", @"跳动动画", @"图表动画", @"公转动画", @"音符动画", @"coverFlow动画"];
     [self.view addSubview:self.tableView];
     
 }
@@ -60,57 +52,9 @@
     
     switch (indexPath.row) {
         case 0:{
-            
-            WGGeometryAniViewController *vc = [[WGGeometryAniViewController alloc] init];
+            WGCALayerAnimationViewController *vc = [[WGCALayerAnimationViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-        case 1:{
-            
-            WGLocationAniViewController *vc = [[WGLocationAniViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-        case 2:{
-            
-            WGAlphaAniViewController *vc = [[WGAlphaAniViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-        case 3:{
-            
-            WGCombinationViewController *vc = [[WGCombinationViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-        case 4:{
-            
-            WGZoomViewController *vc = [[WGZoomViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-        case 5:{
-            
-            WGTurnPlateViewController *vc = [[WGTurnPlateViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-        case 6:{
-            
-            WGAirportViewController *vc = [[WGAirportViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-        case 7:{
-            
-            WGTurnPlateViewController *vc = [[WGTurnPlateViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-            break;
-        }
-        case 8:{
-            
-            WGPlaneViewController *vc = [[WGPlaneViewController alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
+           
             break;
         }
         default:

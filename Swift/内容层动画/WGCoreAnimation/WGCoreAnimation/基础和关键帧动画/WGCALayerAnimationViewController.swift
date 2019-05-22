@@ -85,10 +85,10 @@ extension WGCALayerAnimationViewController: UITableViewDelegate, UITableViewData
         case 0:
             //位置动画
             buildShowBtn()
-//            let positionX = showBtn.x+showBtn.width/2+WgWith/4
-//            let positionY = showBtn.y+showBtn.height/2+100
-            let positionX = showBtn.x+showBtn.width/2
-            let positionY = showBtn.y+showBtn.height/2
+            let positionX = showBtn.x+showBtn.width/2+WgWith/4
+            let positionY = showBtn.y+showBtn.height/2+100
+//            let positionX = showBtn.x+showBtn.width/2
+//            let positionY = showBtn.y+showBtn.height/2
             let toValue = NSValue(cgPoint: CGPoint(x: positionX, y: positionY))
             let ani = animationMethod(keyPath: "position", fromValue: nil, toValue: toValue, duration: 2)
             showBtn.layer.add(ani, forKey: nil)

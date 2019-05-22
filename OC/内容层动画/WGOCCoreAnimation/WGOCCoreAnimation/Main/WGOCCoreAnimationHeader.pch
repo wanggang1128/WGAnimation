@@ -1,0 +1,15 @@
+//
+//  WGOCCoreAnimationHeader.pch
+//  WGOCCoreAnimation
+//
+//  Created by wanggang on 2019/5/22.
+//  Copyright © 2019 bozhong. All rights reserved.
+//
+
+#ifndef WGOCCoreAnimationHeader_pch
+#define WGOCCoreAnimationHeader_pch
+
+#import "UIView+WGFrame.h"
+#import "WGGlobDefine.h"
+
+#endif /* WGOCCoreAnimationHeader_pch */

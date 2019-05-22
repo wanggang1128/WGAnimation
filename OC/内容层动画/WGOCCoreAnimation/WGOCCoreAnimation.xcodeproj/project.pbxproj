@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32470C822294E58200A62235 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470C812294E58200A62235 /* AppDelegate.m */; };
+		32470C8A2294E58300A62235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32470C892294E58300A62235 /* Assets.xcassets */; };
+		32470C8D2294E58300A62235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32470C8B2294E58300A62235 /* LaunchScreen.storyboard */; };
+		32470C902294E58400A62235 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470C8F2294E58300A62235 /* main.m */; };
+		32470C9A2294E58400A62235 /* WGOCCoreAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470C992294E58400A62235 /* WGOCCoreAnimationTests.m */; };
+		32470CA52294E58400A62235 /* WGOCCoreAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CA42294E58400A62235 /* WGOCCoreAnimationUITests.m */; };
+		32470CB62294E64C00A62235 /* UIView+WGFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CB42294E64C00A62235 /* UIView+WGFrame.m */; };
+		32470CBA2294E74E00A62235 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CB92294E74E00A62235 /* ViewController.m */; };
+		32470CBE2294E97400A62235 /* WGCALayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CBD2294E97400A62235 /* WGCALayerAnimationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32470C962294E58400A62235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32470C752294E58200A62235 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32470C7C2294E58200A62235;
+			remoteInfo = WGOCCoreAnimation;
+		};
+		32470CA12294E58400A62235 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32470C752294E58200A62235 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32470C7C2294E58200A62235;
+			remoteInfo = WGOCCoreAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32470C7D2294E58200A62235 /* WGOCCoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGOCCoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32470C802294E58200A62235 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32470C812294E58200A62235 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32470C892294E58300A62235 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32470C8C2294E58300A62235 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32470C8E2294E58300A62235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32470C8F2294E58300A62235 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32470C952294E58400A62235 /* WGOCCoreAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGOCCoreAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32470C992294E58400A62235 /* WGOCCoreAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGOCCoreAnimationTests.m; sourceTree = "<group>"; };
+		32470C9B2294E58400A62235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32470CA02294E58400A62235 /* WGOCCoreAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGOCCoreAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32470CA42294E58400A62235 /* WGOCCoreAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGOCCoreAnimationUITests.m; sourceTree = "<group>"; };
+		32470CA62294E58400A62235 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32470CB32294E64C00A62235 /* WGGlobDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WGGlobDefine.h; path = "../../../../显示层动画/WGOCAnimationPrimary/WGOCAnimationPrimary/Main/WGGlobDefine.h"; sourceTree = "<group>"; };
+		32470CB42294E64C00A62235 /* UIView+WGFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+WGFrame.m"; path = "../../../../显示层动画/WGOCAnimationPrimary/WGOCAnimationPrimary/Main/UIView+WGFrame.m"; sourceTree = "<group>"; };
+		32470CB52294E64C00A62235 /* UIView+WGFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+WGFrame.h"; path = "../../../../显示层动画/WGOCAnimationPrimary/WGOCAnimationPrimary/Main/UIView+WGFrame.h"; sourceTree = "<group>"; };
+		32470CB72294E67D00A62235 /* WGOCCoreAnimationHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGOCCoreAnimationHeader.pch; sourceTree = "<group>"; };
+		32470CB82294E74E00A62235 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../../显示层动画/WGOCAnimationPrimary/WGOCAnimationPrimary/Main/ViewController.h"; sourceTree = "<group>"; };
+		32470CB92294E74E00A62235 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../../显示层动画/WGOCAnimationPrimary/WGOCAnimationPrimary/Main/ViewController.m"; sourceTree = "<group>"; };
+		32470CBC2294E97400A62235 /* WGCALayerAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGCALayerAnimationViewController.h; sourceTree = "<group>"; };
+		32470CBD2294E97400A62235 /* WGCALayerAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGCALayerAnimationViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32470C7A2294E58200A62235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32470C922294E58400A62235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32470C9D2294E58400A62235 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32470C742294E58200A62235 = {
+			isa = PBXGroup;
+			children = (
+				32470C7F2294E58200A62235 /* WGOCCoreAnimation */,
+				32470C982294E58400A62235 /* WGOCCoreAnimationTests */,
+				32470CA32294E58400A62235 /* WGOCCoreAnimationUITests */,
+				32470C7E2294E58200A62235 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32470C7E2294E58200A62235 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32470C7D2294E58200A62235 /* WGOCCoreAnimation.app */,
+				32470C952294E58400A62235 /* WGOCCoreAnimationTests.xctest */,
+				32470CA02294E58400A62235 /* WGOCCoreAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32470C7F2294E58200A62235 /* WGOCCoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				32470CBB2294E94E00A62235 /* 基础和关键帧动画 */,
+				32470CB22294E5D600A62235 /* Main */,
+				32470C892294E58300A62235 /* Assets.xcassets */,
+				32470C8B2294E58300A62235 /* LaunchScreen.storyboard */,
+				32470C8E2294E58300A62235 /* Info.plist */,
+				32470C8F2294E58300A62235 /* main.m */,
+			);
+			path = WGOCCoreAnimation;
+			sourceTree = "<group>";
+		};
+		32470C982294E58400A62235 /* WGOCCoreAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				32470C992294E58400A62235 /* WGOCCoreAnimationTests.m */,
+				32470C9B2294E58400A62235 /* Info.plist */,
+			);
+			path = WGOCCoreAnimationTests;
+			sourceTree = "<group>";
+		};
+		32470CA32294E58400A62235 /* WGOCCoreAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32470CA42294E58400A62235 /* WGOCCoreAnimationUITests.m */,
+				32470CA62294E58400A62235 /* Info.plist */,
+			);
+			path = WGOCCoreAnimationUITests;
+			sourceTree = "<group>";
+		};
+		32470CB22294E5D600A62235 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				32470CB82294E74E00A62235 /* ViewController.h */,
+				32470CB92294E74E00A62235 /* ViewController.m */,
+				32470CB52294E64C00A62235 /* UIView+WGFrame.h */,
+				32470CB42294E64C00A62235 /* UIView+WGFrame.m */,
+				32470CB72294E67D00A62235 /* WGOCCoreAnimationHeader.pch */,
+				32470CB32294E64C00A62235 /* WGGlobDefine.h */,
+				32470C802294E58200A62235 /* AppDelegate.h */,
+				32470C812294E58200A62235 /* AppDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		32470CBB2294E94E00A62235 /* 基础和关键帧动画 */ = {
+			isa = PBXGroup;
+			children = (
+				32470CBC2294E97400A62235 /* WGCALayerAnimationViewController.h */,
+				32470CBD2294E97400A62235 /* WGCALayerAnimationViewController.m */,
+			);
+			path = "基础和关键帧动画";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32470C7C2294E58200A62235 /* WGOCCoreAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32470CA92294E58400A62235 /* Build configuration list for PBXNativeTarget "WGOCCoreAnimation" */;
+			buildPhases = (
+				32470C792294E58200A62235 /* Sources */,
+				32470C7A2294E58200A62235 /* Frameworks */,
+				32470C7B2294E58200A62235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WGOCCoreAnimation;
+			productName = WGOCCoreAnimation;
+			productReference = 32470C7D2294E58200A62235 /* WGOCCoreAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32470C942294E58400A62235 /* WGOCCoreAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32470CAC2294E58400A62235 /* Build configuration list for PBXNativeTarget "WGOCCoreAnimationTests" */;
+			buildPhases = (
+				32470C912294E58400A62235 /* Sources */,
+				32470C922294E58400A62235 /* Frameworks */,
+				32470C932294E58400A62235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32470C972294E58400A62235 /* PBXTargetDependency */,
+			);
+			name = WGOCCoreAnimationTests;
+			productName = WGOCCoreAnimationTests;
+			productReference = 32470C952294E58400A62235 /* WGOCCoreAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32470C9F2294E58400A62235 /* WGOCCoreAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32470CAF2294E58400A62235 /* Build configuration list for PBXNativeTarget "WGOCCoreAnimationUITests" */;
+			buildPhases = (
+				32470C9C2294E58400A62235 /* Sources */,
+				32470C9D2294E58400A62235 /* Frameworks */,
+				32470C9E2294E58400A62235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32470CA22294E58400A62235 /* PBXTargetDependency */,
+			);
+			name = WGOCCoreAnimationUITests;
+			productName = WGOCCoreAnimationUITests;
+			productReference = 32470CA02294E58400A62235 /* WGOCCoreAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32470C752294E58200A62235 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = bozhong;
+				TargetAttributes = {
+					32470C7C2294E58200A62235 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					32470C942294E58400A62235 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 32470C7C2294E58200A62235;
+					};
+					32470C9F2294E58400A62235 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 32470C7C2294E58200A62235;
+					};
+				};
+			};
+			buildConfigurationList = 32470C782294E58200A62235 /* Build configuration list for PBXProject "WGOCCoreAnimation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32470C742294E58200A62235;
+			productRefGroup = 32470C7E2294E58200A62235 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32470C7C2294E58200A62235 /* WGOCCoreAnimation */,
+				32470C942294E58400A62235 /* WGOCCoreAnimationTests */,
+				32470C9F2294E58400A62235 /* WGOCCoreAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32470C7B2294E58200A62235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32470C8D2294E58300A62235 /* LaunchScreen.storyboard in Resources */,
+				32470C8A2294E58300A62235 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32470C932294E58400A62235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32470C9E2294E58400A62235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32470C792294E58200A62235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32470CB62294E64C00A62235 /* UIView+WGFrame.m in Sources */,
+				32470C902294E58400A62235 /* main.m in Sources */,
+				32470C822294E58200A62235 /* AppDelegate.m in Sources */,
+				32470CBE2294E97400A62235 /* WGCALayerAnimationViewController.m in Sources */,
+				32470CBA2294E74E00A62235 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32470C912294E58400A62235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32470C9A2294E58400A62235 /* WGOCCoreAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32470C9C2294E58400A62235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32470CA52294E58400A62235 /* WGOCCoreAnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32470C972294E58400A62235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32470C7C2294E58200A62235 /* WGOCCoreAnimation */;
+			targetProxy = 32470C962294E58400A62235 /* PBXContainerItemProxy */;
+		};
+		32470CA22294E58400A62235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32470C7C2294E58200A62235 /* WGOCCoreAnimation */;
+			targetProxy = 32470CA12294E58400A62235 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32470C8B2294E58300A62235 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32470C8C2294E58300A62235 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32470CA72294E58400A62235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32470CA82294E58400A62235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32470CAA2294E58400A62235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WGOCCoreAnimation/Main/WGOCCoreAnimationHeader.pch;
+				INFOPLIST_FILE = WGOCCoreAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGOCCoreAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32470CAB2294E58400A62235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WGOCCoreAnimation/Main/WGOCCoreAnimationHeader.pch;
+				INFOPLIST_FILE = WGOCCoreAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGOCCoreAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32470CAD2294E58400A62235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGOCCoreAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGOCCoreAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WGOCCoreAnimation.app/WGOCCoreAnimation";
+			};
+			name = Debug;
+		};
+		32470CAE2294E58400A62235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGOCCoreAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGOCCoreAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WGOCCoreAnimation.app/WGOCCoreAnimation";
+			};
+			name = Release;
+		};
+		32470CB02294E58400A62235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGOCCoreAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGOCCoreAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WGOCCoreAnimation;
+			};
+			name = Debug;
+		};
+		32470CB12294E58400A62235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
+				INFOPLIST_FILE = WGOCCoreAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozhong.WGOCCoreAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WGOCCoreAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32470C782294E58200A62235 /* Build configuration list for PBXProject "WGOCCoreAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32470CA72294E58400A62235 /* Debug */,
+				32470CA82294E58400A62235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32470CA92294E58400A62235 /* Build configuration list for PBXNativeTarget "WGOCCoreAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32470CAA2294E58400A62235 /* Debug */,
+				32470CAB2294E58400A62235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32470CAC2294E58400A62235 /* Build configuration list for PBXNativeTarget "WGOCCoreAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32470CAD2294E58400A62235 /* Debug */,
+				32470CAE2294E58400A62235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32470CAF2294E58400A62235 /* Build configuration list for PBXNativeTarget "WGOCCoreAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32470CB02294E58400A62235 /* Debug */,
+				32470CB12294E58400A62235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32470C752294E58200A62235 /* Project object */;
+}
