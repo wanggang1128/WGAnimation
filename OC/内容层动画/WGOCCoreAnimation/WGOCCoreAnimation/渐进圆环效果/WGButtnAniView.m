@@ -79,7 +79,7 @@
     CABasicAnimation *borderWidthAni = [self aniKeyPath:@"borderWidth" fromValue:@(0) toValue:@(5)];
     
     //边框颜色
-    CABasicAnimation *borderColorAni = [self aniKeyPath:@"borderColor" fromValue:(id)self.firstColor.CGColor toValue:(id)[UIColor grayColor].CGColor];
+    CABasicAnimation *borderColorAni = [self aniKeyPath:@"borderColor" fromValue:(id)self.firstColor.CGColor toValue:(id)[UIColor lightGrayColor].CGColor];
     
     //动画组
     CAAnimationGroup *contentGroup = [[CAAnimationGroup alloc] init];

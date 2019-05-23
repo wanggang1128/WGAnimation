@@ -40,7 +40,7 @@
     _aniBtn.thirdColor = UIColor.greenColor;
     _aniBtn.firstDuation = 3;
     _aniBtn.secondDuation = 5;
-    _aniBtn.thirdDuation = 3;
+    _aniBtn.thirdDuation = 1;
     
     [self.aniBtn startAniDuation];
     
