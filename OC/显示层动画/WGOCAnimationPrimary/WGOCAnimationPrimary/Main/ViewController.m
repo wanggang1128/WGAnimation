@@ -10,6 +10,9 @@
 #import "WGCALayerAnimationViewController.h"
 #import "WGWaterWaveBtnViewController.h"
 #import "WGCircleBtnAniViewController.h"
+#import "WGFireAniViewController.h"
+#import "WGNeonAniViewController.h"
+#import "WGSnowAniViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -65,6 +68,21 @@
         }
         case 2:{
             WGCircleBtnAniViewController *vc = [[WGCircleBtnAniViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 3:{
+            WGFireAniViewController *vc = [[WGFireAniViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 4:{
+            WGNeonAniViewController *vc = [[WGNeonAniViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 5:{
+            WGSnowAniViewController *vc = [[WGSnowAniViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

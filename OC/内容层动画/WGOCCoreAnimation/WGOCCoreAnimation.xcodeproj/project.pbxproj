@@ -21,6 +21,12 @@
 		32470CC92295325100A62235 /* WGCircleBtnAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CC82295325100A62235 /* WGCircleBtnAniViewController.m */; };
 		32470CCC2295327C00A62235 /* WGButtnAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CCB2295327C00A62235 /* WGButtnAniView.m */; };
 		32470CCF2295329300A62235 /* WGCircleAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CCE2295329300A62235 /* WGCircleAniView.m */; };
+		3281516722968F75001879EB /* WGFireAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281516622968F75001879EB /* WGFireAniViewController.m */; };
+		3281516922968F88001879EB /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 3281516822968F88001879EB /* fire.png */; };
+		3281516B22968F98001879EB /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3281516A22968F98001879EB /* snow.png */; };
+		3281516D22968FA1001879EB /* nenolight.png in Resources */ = {isa = PBXBuildFile; fileRef = 3281516C22968FA1001879EB /* nenolight.png */; };
+		3281517022968FC6001879EB /* WGNeonAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281516F22968FC6001879EB /* WGNeonAniViewController.m */; };
+		3281517322968FDF001879EB /* WGSnowAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281517222968FDF001879EB /* WGSnowAniViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,15 @@
 		32470CCB2295327C00A62235 /* WGButtnAniView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGButtnAniView.m; sourceTree = "<group>"; };
 		32470CCD2295329300A62235 /* WGCircleAniView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGCircleAniView.h; sourceTree = "<group>"; };
 		32470CCE2295329300A62235 /* WGCircleAniView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGCircleAniView.m; sourceTree = "<group>"; };
+		3281516522968F75001879EB /* WGFireAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFireAniViewController.h; sourceTree = "<group>"; };
+		3281516622968F75001879EB /* WGFireAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFireAniViewController.m; sourceTree = "<group>"; };
+		3281516822968F88001879EB /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = "../../../../../../Swift/内容层动画/WGCoreAnimation/WGCoreAnimation/CAEmitterCell粒子动画/大火动画/fire.png"; sourceTree = "<group>"; };
+		3281516A22968F98001879EB /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snow.png; path = "../../../../../../Swift/内容层动画/WGCoreAnimation/WGCoreAnimation/CAEmitterCell粒子动画/大雪效果/snow.png"; sourceTree = "<group>"; };
+		3281516C22968FA1001879EB /* nenolight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nenolight.png; path = "../../../../../../Swift/内容层动画/WGCoreAnimation/WGCoreAnimation/CAEmitterCell粒子动画/霓虹效果/nenolight.png"; sourceTree = "<group>"; };
+		3281516E22968FC6001879EB /* WGNeonAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGNeonAniViewController.h; sourceTree = "<group>"; };
+		3281516F22968FC6001879EB /* WGNeonAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGNeonAniViewController.m; sourceTree = "<group>"; };
+		3281517122968FDF001879EB /* WGSnowAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGSnowAniViewController.h; sourceTree = "<group>"; };
+		3281517222968FDF001879EB /* WGSnowAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGSnowAniViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +137,7 @@
 		32470C7F2294E58200A62235 /* WGOCCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				3281516122968EFD001879EB /* CAEmitterCell粒子动画 */,
 				32470CC62295322A00A62235 /* 渐进圆环效果 */,
 				32470CBF229524EE00A62235 /* 水纹动画 */,
 				32470CBB2294E94E00A62235 /* 基础和关键帧动画 */,
@@ -198,6 +214,46 @@
 				32470CCE2295329300A62235 /* WGCircleAniView.m */,
 			);
 			path = "渐进圆环效果";
+			sourceTree = "<group>";
+		};
+		3281516122968EFD001879EB /* CAEmitterCell粒子动画 */ = {
+			isa = PBXGroup;
+			children = (
+				3281516422968F43001879EB /* 大雪效果 */,
+				3281516322968F38001879EB /* 霓虹效果 */,
+				3281516222968F27001879EB /* 大火动画 */,
+			);
+			path = "CAEmitterCell粒子动画";
+			sourceTree = "<group>";
+		};
+		3281516222968F27001879EB /* 大火动画 */ = {
+			isa = PBXGroup;
+			children = (
+				3281516822968F88001879EB /* fire.png */,
+				3281516522968F75001879EB /* WGFireAniViewController.h */,
+				3281516622968F75001879EB /* WGFireAniViewController.m */,
+			);
+			path = "大火动画";
+			sourceTree = "<group>";
+		};
+		3281516322968F38001879EB /* 霓虹效果 */ = {
+			isa = PBXGroup;
+			children = (
+				3281516C22968FA1001879EB /* nenolight.png */,
+				3281516E22968FC6001879EB /* WGNeonAniViewController.h */,
+				3281516F22968FC6001879EB /* WGNeonAniViewController.m */,
+			);
+			path = "霓虹效果";
+			sourceTree = "<group>";
+		};
+		3281516422968F43001879EB /* 大雪效果 */ = {
+			isa = PBXGroup;
+			children = (
+				3281516A22968F98001879EB /* snow.png */,
+				3281517122968FDF001879EB /* WGSnowAniViewController.h */,
+				3281517222968FDF001879EB /* WGSnowAniViewController.m */,
+			);
+			path = "大雪效果";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +361,9 @@
 			files = (
 				32470C8D2294E58300A62235 /* LaunchScreen.storyboard in Resources */,
 				32470C8A2294E58300A62235 /* Assets.xcassets in Resources */,
+				3281516B22968F98001879EB /* snow.png in Resources */,
+				3281516922968F88001879EB /* fire.png in Resources */,
+				3281516D22968FA1001879EB /* nenolight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,13 +389,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				32470CB62294E64C00A62235 /* UIView+WGFrame.m in Sources */,
+				3281517022968FC6001879EB /* WGNeonAniViewController.m in Sources */,
 				32470C902294E58400A62235 /* main.m in Sources */,
 				32470CC22295250F00A62235 /* WGWaterWaveBtnViewController.m in Sources */,
 				32470CCF2295329300A62235 /* WGCircleAniView.m in Sources */,
 				32470CCC2295327C00A62235 /* WGButtnAniView.m in Sources */,
 				32470CC52295253000A62235 /* WGWaterWaveBtn.m in Sources */,
 				32470CC92295325100A62235 /* WGCircleBtnAniViewController.m in Sources */,
+				3281516722968F75001879EB /* WGFireAniViewController.m in Sources */,
 				32470C822294E58200A62235 /* AppDelegate.m in Sources */,
+				3281517322968FDF001879EB /* WGSnowAniViewController.m in Sources */,
 				32470CBE2294E97400A62235 /* WGCALayerAnimationViewController.m in Sources */,
 				32470CBA2294E74E00A62235 /* ViewController.m in Sources */,
 			);
