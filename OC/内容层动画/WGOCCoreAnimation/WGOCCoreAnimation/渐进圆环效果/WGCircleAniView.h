@@ -10,7 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol WGCircleAniViewDelegate <NSObject>
+
+@optional
+- (void)aniDidStop:(CAAnimation *)ani finished:(BOOL)finished;
+
+@end
+
 @interface WGCircleAniView : UIView
+
+@property (nonatomic, weak) id<WGCircleAniViewDelegate> circleAniViewDelegate;
+
+- (void)startCircleAniColor:(UIColor *)color duation:(CGFloat)duation;
 
 @end
 

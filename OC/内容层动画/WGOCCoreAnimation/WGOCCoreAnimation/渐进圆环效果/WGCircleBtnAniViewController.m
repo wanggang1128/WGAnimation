@@ -26,6 +26,7 @@
     
     self.aniBtn = [[WGButtnAniView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-150)/2, 200, 150, 70)];
     self.aniBtn.titleLab.text = @"下载";
+    
     [self.view addSubview:self.aniBtn];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapMethod)];
@@ -34,7 +35,15 @@
 
 - (void)tapMethod{
     
-    [self.aniBtn startAniDuation:3];
+    _aniBtn.firstColor = UIColor.brownColor;
+    _aniBtn.secondColor = UIColor.redColor;
+    _aniBtn.thirdColor = UIColor.greenColor;
+    _aniBtn.firstDuation = 3;
+    _aniBtn.secondDuation = 5;
+    _aniBtn.thirdDuation = 3;
+    
+    [self.aniBtn startAniDuation];
+    
 }
 
 @end
