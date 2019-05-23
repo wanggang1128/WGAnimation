@@ -68,8 +68,13 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-        default:
+        default:{
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"OC版暂没整理,请看swift版" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alert show];
+            
             break;
+        }
     }
 }
 
