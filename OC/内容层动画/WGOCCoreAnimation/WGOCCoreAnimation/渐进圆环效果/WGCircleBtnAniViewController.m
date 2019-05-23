@@ -26,6 +26,7 @@
     
     self.aniBtn = [[WGButtnAniView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-150)/2, 200, 150, 70)];
     self.aniBtn.titleLab.text = @"下载";
+    self.aniBtn.backgroundColor = UIColor.brownColor;
     
     [self.view addSubview:self.aniBtn];
     
