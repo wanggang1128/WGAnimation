@@ -21,6 +21,8 @@
 		32470CC92295325100A62235 /* WGCircleBtnAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CC82295325100A62235 /* WGCircleBtnAniViewController.m */; };
 		32470CCC2295327C00A62235 /* WGButtnAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CCB2295327C00A62235 /* WGButtnAniView.m */; };
 		32470CCF2295329300A62235 /* WGCircleAniView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470CCE2295329300A62235 /* WGCircleAniView.m */; };
+		325C7C61229B905A00E3458A /* WGBeatAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325C7C60229B905A00E3458A /* WGBeatAniViewController.m */; };
+		3260C8412297967E00CD840F /* WGScanAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3260C8402297967E00CD840F /* WGScanAniViewController.m */; };
 		3281516722968F75001879EB /* WGFireAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281516622968F75001879EB /* WGFireAniViewController.m */; };
 		3281516922968F88001879EB /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 3281516822968F88001879EB /* fire.png */; };
 		3281516B22968F98001879EB /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3281516A22968F98001879EB /* snow.png */; };
@@ -78,6 +80,10 @@
 		32470CCB2295327C00A62235 /* WGButtnAniView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGButtnAniView.m; sourceTree = "<group>"; };
 		32470CCD2295329300A62235 /* WGCircleAniView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGCircleAniView.h; sourceTree = "<group>"; };
 		32470CCE2295329300A62235 /* WGCircleAniView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGCircleAniView.m; sourceTree = "<group>"; };
+		325C7C5F229B905A00E3458A /* WGBeatAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBeatAniViewController.h; sourceTree = "<group>"; };
+		325C7C60229B905A00E3458A /* WGBeatAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBeatAniViewController.m; sourceTree = "<group>"; };
+		3260C83F2297967E00CD840F /* WGScanAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGScanAniViewController.h; sourceTree = "<group>"; };
+		3260C8402297967E00CD840F /* WGScanAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGScanAniViewController.m; sourceTree = "<group>"; };
 		3281516522968F75001879EB /* WGFireAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGFireAniViewController.h; sourceTree = "<group>"; };
 		3281516622968F75001879EB /* WGFireAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGFireAniViewController.m; sourceTree = "<group>"; };
 		3281516822968F88001879EB /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = "../../../../../../Swift/内容层动画/WGCoreAnimation/WGCoreAnimation/CAEmitterCell粒子动画/大火动画/fire.png"; sourceTree = "<group>"; };
@@ -137,6 +143,7 @@
 		32470C7F2294E58200A62235 /* WGOCCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				3260C83C2297960500CD840F /* CAGradientLayer动画 */,
 				3281516122968EFD001879EB /* CAEmitterCell粒子动画 */,
 				32470CC62295322A00A62235 /* 渐进圆环效果 */,
 				32470CBF229524EE00A62235 /* 水纹动画 */,
@@ -214,6 +221,33 @@
 				32470CCE2295329300A62235 /* WGCircleAniView.m */,
 			);
 			path = "渐进圆环效果";
+			sourceTree = "<group>";
+		};
+		3260C83C2297960500CD840F /* CAGradientLayer动画 */ = {
+			isa = PBXGroup;
+			children = (
+				3260C83E2297962600CD840F /* 跳动动画 */,
+				3260C83D2297961C00CD840F /* 扫描动画 */,
+			);
+			path = "CAGradientLayer动画";
+			sourceTree = "<group>";
+		};
+		3260C83D2297961C00CD840F /* 扫描动画 */ = {
+			isa = PBXGroup;
+			children = (
+				3260C83F2297967E00CD840F /* WGScanAniViewController.h */,
+				3260C8402297967E00CD840F /* WGScanAniViewController.m */,
+			);
+			path = "扫描动画";
+			sourceTree = "<group>";
+		};
+		3260C83E2297962600CD840F /* 跳动动画 */ = {
+			isa = PBXGroup;
+			children = (
+				325C7C5F229B905A00E3458A /* WGBeatAniViewController.h */,
+				325C7C60229B905A00E3458A /* WGBeatAniViewController.m */,
+			);
+			path = "跳动动画";
 			sourceTree = "<group>";
 		};
 		3281516122968EFD001879EB /* CAEmitterCell粒子动画 */ = {
@@ -396,10 +430,12 @@
 				32470CCC2295327C00A62235 /* WGButtnAniView.m in Sources */,
 				32470CC52295253000A62235 /* WGWaterWaveBtn.m in Sources */,
 				32470CC92295325100A62235 /* WGCircleBtnAniViewController.m in Sources */,
+				3260C8412297967E00CD840F /* WGScanAniViewController.m in Sources */,
 				3281516722968F75001879EB /* WGFireAniViewController.m in Sources */,
 				32470C822294E58200A62235 /* AppDelegate.m in Sources */,
 				3281517322968FDF001879EB /* WGSnowAniViewController.m in Sources */,
 				32470CBE2294E97400A62235 /* WGCALayerAnimationViewController.m in Sources */,
+				325C7C61229B905A00E3458A /* WGBeatAniViewController.m in Sources */,
 				32470CBA2294E74E00A62235 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

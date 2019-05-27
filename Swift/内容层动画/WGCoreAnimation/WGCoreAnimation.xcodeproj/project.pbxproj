@@ -150,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				322ACCD3226EA949009BF1CE /* WGCoreAnimation */,
-				322ACCE8226EA94A009BF1CE /* WGCoreAnimationTests */,
 				322ACCF3226EA94A009BF1CE /* WGCoreAnimationUITests */,
 				322ACCD2226EA949009BF1CE /* Products */,
 			);
@@ -210,6 +209,7 @@
 				322ACCE0226EA94A009BF1CE /* Info.plist */,
 				322ACCD6226EA949009BF1CE /* ViewController.swift */,
 				322ACCD4226EA949009BF1CE /* AppDelegate.swift */,
+				322ACCE8226EA94A009BF1CE /* WGCoreAnimationTests */,
 			);
 			path = main;
 			sourceTree = "<group>";

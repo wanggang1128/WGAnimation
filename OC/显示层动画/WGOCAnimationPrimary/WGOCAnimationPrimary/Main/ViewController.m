@@ -13,6 +13,8 @@
 #import "WGFireAniViewController.h"
 #import "WGNeonAniViewController.h"
 #import "WGSnowAniViewController.h"
+#import "WGScanAniViewController.h"
+#import "WGBeatAniViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -83,6 +85,16 @@
         }
         case 5:{
             WGSnowAniViewController *vc = [[WGSnowAniViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 6:{
+            WGScanAniViewController *vc = [[WGScanAniViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 7:{
+            WGBeatAniViewController *vc = [[WGBeatAniViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
