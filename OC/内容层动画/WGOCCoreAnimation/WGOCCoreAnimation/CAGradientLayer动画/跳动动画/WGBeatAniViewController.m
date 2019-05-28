@@ -28,6 +28,13 @@
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
 }
 
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    
+    [self.timer invalidate];
+    _timer = nil;
+}
+
 - (void)colorChage{
     
     for (CAGradientLayer *layer in self.layerArr) {
@@ -95,6 +102,5 @@
     }
     return _layerArr;
 }
-
 
 @end

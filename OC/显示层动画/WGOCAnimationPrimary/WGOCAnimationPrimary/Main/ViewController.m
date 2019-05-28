@@ -15,6 +15,7 @@
 #import "WGSnowAniViewController.h"
 #import "WGScanAniViewController.h"
 #import "WGBeatAniViewController.h"
+#import "WGChartAniViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -95,6 +96,11 @@
         }
         case 7:{
             WGBeatAniViewController *vc = [[WGBeatAniViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 8:{
+            WGChartAniViewController *vc = [[WGChartAniViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
