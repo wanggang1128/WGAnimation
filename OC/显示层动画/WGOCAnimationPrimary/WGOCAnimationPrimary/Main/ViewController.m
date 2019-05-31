@@ -16,6 +16,8 @@
 #import "WGScanAniViewController.h"
 #import "WGBeatAniViewController.h"
 #import "WGChartAniViewController.h"
+#import "WGEarthAniViewController.h"
+#import "WGReplicatorViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -101,6 +103,16 @@
         }
         case 8:{
             WGChartAniViewController *vc = [[WGChartAniViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 9:{
+            WGEarthAniViewController *vc = [[WGEarthAniViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 10:{
+            WGReplicatorViewController *vc = [[WGReplicatorViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

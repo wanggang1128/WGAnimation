@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3236855F229E16C200B923EF /* WGEarthAniViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3236855E229E16C200B923EF /* WGEarthAniViewController.m */; };
+		32368562229E16DA00B923EF /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 32368560229E16DA00B923EF /* sun.png */; };
+		32368563229E16DA00B923EF /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 32368561229E16DA00B923EF /* earth.png */; };
+		32368566229E16F400B923EF /* WGReplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32368565229E16F400B923EF /* WGReplicatorViewController.m */; };
 		32470C822294E58200A62235 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32470C812294E58200A62235 /* AppDelegate.m */; };
 		32470C8A2294E58300A62235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32470C892294E58300A62235 /* Assets.xcassets */; };
 		32470C8D2294E58300A62235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32470C8B2294E58300A62235 /* LaunchScreen.storyboard */; };
@@ -52,6 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3236855D229E16C200B923EF /* WGEarthAniViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGEarthAniViewController.h; sourceTree = "<group>"; };
+		3236855E229E16C200B923EF /* WGEarthAniViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGEarthAniViewController.m; sourceTree = "<group>"; };
+		32368560229E16DA00B923EF /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sun.png; path = "../../../../../../Swift/内容层动画/WGCoreAnimation/WGCoreAnimation/CAReplicatorLayer动画/地球公转/sun.png"; sourceTree = "<group>"; };
+		32368561229E16DA00B923EF /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = earth.png; path = "../../../../../../Swift/内容层动画/WGCoreAnimation/WGCoreAnimation/CAReplicatorLayer动画/地球公转/earth.png"; sourceTree = "<group>"; };
+		32368564229E16F400B923EF /* WGReplicatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGReplicatorViewController.h; sourceTree = "<group>"; };
+		32368565229E16F400B923EF /* WGReplicatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGReplicatorViewController.m; sourceTree = "<group>"; };
 		32470C7D2294E58200A62235 /* WGOCCoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGOCCoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32470C802294E58200A62235 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32470C812294E58200A62235 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -129,6 +139,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3236855A229E168E00B923EF /* CAReplicatorLayer动画 */ = {
+			isa = PBXGroup;
+			children = (
+				3236855C229E16A800B923EF /* 跳动的音符 */,
+				3236855B229E169300B923EF /* 地球公转 */,
+			);
+			path = "CAReplicatorLayer动画";
+			sourceTree = "<group>";
+		};
+		3236855B229E169300B923EF /* 地球公转 */ = {
+			isa = PBXGroup;
+			children = (
+				3236855D229E16C200B923EF /* WGEarthAniViewController.h */,
+				3236855E229E16C200B923EF /* WGEarthAniViewController.m */,
+				32368561229E16DA00B923EF /* earth.png */,
+				32368560229E16DA00B923EF /* sun.png */,
+			);
+			path = "地球公转";
+			sourceTree = "<group>";
+		};
+		3236855C229E16A800B923EF /* 跳动的音符 */ = {
+			isa = PBXGroup;
+			children = (
+				32368564229E16F400B923EF /* WGReplicatorViewController.h */,
+				32368565229E16F400B923EF /* WGReplicatorViewController.m */,
+			);
+			path = "跳动的音符";
+			sourceTree = "<group>";
+		};
 		32470C742294E58200A62235 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +191,7 @@
 		32470C7F2294E58200A62235 /* WGOCCoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				3236855A229E168E00B923EF /* CAReplicatorLayer动画 */,
 				325C7C62229BD22200E3458A /* CAShapeLayer动画 */,
 				3260C83C2297960500CD840F /* CAGradientLayer动画 */,
 				3281516122968EFD001879EB /* CAEmitterCell粒子动画 */,
@@ -416,8 +456,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32368562229E16DA00B923EF /* sun.png in Resources */,
 				32470C8D2294E58300A62235 /* LaunchScreen.storyboard in Resources */,
 				32470C8A2294E58300A62235 /* Assets.xcassets in Resources */,
+				32368563229E16DA00B923EF /* earth.png in Resources */,
 				3281516B22968F98001879EB /* snow.png in Resources */,
 				3281516922968F88001879EB /* fire.png in Resources */,
 				3281516D22968FA1001879EB /* nenolight.png in Resources */,
@@ -453,6 +495,7 @@
 				32470CCC2295327C00A62235 /* WGButtnAniView.m in Sources */,
 				325C7C68229BD3E100E3458A /* WGLineChartView.m in Sources */,
 				32470CC52295253000A62235 /* WGWaterWaveBtn.m in Sources */,
+				3236855F229E16C200B923EF /* WGEarthAniViewController.m in Sources */,
 				32470CC92295325100A62235 /* WGCircleBtnAniViewController.m in Sources */,
 				3260C8412297967E00CD840F /* WGScanAniViewController.m in Sources */,
 				3281516722968F75001879EB /* WGFireAniViewController.m in Sources */,
@@ -461,6 +504,7 @@
 				325C7C65229BD3C700E3458A /* WGChartAniViewController.m in Sources */,
 				32470CBE2294E97400A62235 /* WGCALayerAnimationViewController.m in Sources */,
 				325C7C6B229BD41B00E3458A /* WGBarChartView.m in Sources */,
+				32368566229E16F400B923EF /* WGReplicatorViewController.m in Sources */,
 				325C7C61229B905A00E3458A /* WGBeatAniViewController.m in Sources */,
 				32470CBA2294E74E00A62235 /* ViewController.m in Sources */,
 			);
