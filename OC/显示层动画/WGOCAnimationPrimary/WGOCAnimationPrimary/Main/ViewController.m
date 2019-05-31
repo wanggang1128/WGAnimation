@@ -18,6 +18,7 @@
 #import "WGChartAniViewController.h"
 #import "WGEarthAniViewController.h"
 #import "WGReplicatorViewController.h"
+#import "WGCoverFlowViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -113,6 +114,11 @@
         }
         case 10:{
             WGReplicatorViewController *vc = [[WGReplicatorViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 11:{
+            WGCoverFlowViewController *vc = [[WGCoverFlowViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
