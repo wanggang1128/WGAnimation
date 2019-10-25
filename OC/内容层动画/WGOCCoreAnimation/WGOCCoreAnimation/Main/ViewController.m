@@ -7,15 +7,18 @@
 //
 
 #import "ViewController.h"
-#import "WGGeometryAniViewController.h"
-#import "WGLocationAniViewController.h"
-#import "WGAlphaAniViewController.h"
-#import "WGCombinationViewController.h"
-#import "WGZoomViewController.h"
-#import "WGTurnPlateViewController.h"
-#import "WGAirportViewController.h"
-#import "WGTurnplateKeyViewController.h"
-#import "WGPlaneViewController.h"
+#import "WGCALayerAnimationViewController.h"
+#import "WGWaterWaveBtnViewController.h"
+#import "WGCircleBtnAniViewController.h"
+#import "WGFireAniViewController.h"
+#import "WGNeonAniViewController.h"
+#import "WGSnowAniViewController.h"
+#import "WGScanAniViewController.h"
+#import "WGBeatAniViewController.h"
+#import "WGChartAniViewController.h"
+#import "WGEarthAniViewController.h"
+#import "WGReplicatorViewController.h"
+#import "WGCoverFlowViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -32,7 +35,7 @@
     
     self.title = @"列表";
     
-    self.dataArr = @[@"几何形状动画", @"位置形状动画", @"淡入淡出动画和颜色", @"综合位置&形状&颜色&渐变动画", @"旋转&缩放&平移", @"旋转实现-简单转盘", @"关键帧动画-飞机降落", @"关键帧动画-简单转盘", @"逐帧动画-飞机"];
+    self.dataArr = @[@"基础和关键帧动画", @"水纹动画", @"渐进圆环效果", @"大火动画", @"霓虹效果", @"大雪效果", @"扫描动画", @"跳动动画", @"CAShapeLayer动画", @"地球公转", @"跳动的音符", @"CoverFlow效果"];
     [self.view addSubview:self.tableView];
     
 }
@@ -62,55 +65,73 @@
     switch (indexPath.row) {
         case 0:{
             
-            WGGeometryAniViewController *vc = [[WGGeometryAniViewController alloc] init];
+            WGCALayerAnimationViewController *vc = [[WGCALayerAnimationViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 1:{
             
-            WGLocationAniViewController *vc = [[WGLocationAniViewController alloc] init];
+            WGWaterWaveBtnViewController *vc = [[WGWaterWaveBtnViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 2:{
             
-            WGAlphaAniViewController *vc = [[WGAlphaAniViewController alloc] init];
+            WGCircleBtnAniViewController *vc = [[WGCircleBtnAniViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 3:{
             
-            WGCombinationViewController *vc = [[WGCombinationViewController alloc] init];
+            WGFireAniViewController *vc = [[WGFireAniViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 4:{
             
-            WGZoomViewController *vc = [[WGZoomViewController alloc] init];
+            WGNeonAniViewController *vc = [[WGNeonAniViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 5:{
             
-            WGTurnPlateViewController *vc = [[WGTurnPlateViewController alloc] init];
+            WGSnowAniViewController *vc = [[WGSnowAniViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 6:{
             
-            WGAirportViewController *vc = [[WGAirportViewController alloc] init];
+            WGScanAniViewController *vc = [[WGScanAniViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 7:{
             
-            WGTurnPlateViewController *vc = [[WGTurnPlateViewController alloc] init];
+            WGBeatAniViewController *vc = [[WGBeatAniViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 8:{
             
-            WGPlaneViewController *vc = [[WGPlaneViewController alloc] init];
+            WGChartAniViewController *vc = [[WGChartAniViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 9:{
+            
+            WGEarthAniViewController *vc = [[WGEarthAniViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 10:{
+            
+            WGReplicatorViewController *vc = [[WGReplicatorViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 11:{
+            
+            WGCoverFlowViewController *vc = [[WGCoverFlowViewController alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

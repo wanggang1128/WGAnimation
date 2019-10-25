@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324B8F3F2362D73600F9406D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324B8F3E2362D73600F9406D /* ViewController.m */; };
 		32590DAD22939672003171E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32590DAC22939672003171E6 /* AppDelegate.m */; };
-		32590DB022939672003171E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32590DAF22939672003171E6 /* ViewController.m */; };
 		32590DB522939674003171E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32590DB422939674003171E6 /* Assets.xcassets */; };
 		32590DB822939674003171E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32590DB622939674003171E6 /* LaunchScreen.storyboard */; };
 		32590DBB22939674003171E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32590DBA22939674003171E6 /* main.m */; };
@@ -111,11 +111,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		324B8F3D2362D73600F9406D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		324B8F3E2362D73600F9406D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		32590DA822939672003171E6 /* WGOCAnimationPrimary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGOCAnimationPrimary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32590DAB22939672003171E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32590DAC22939672003171E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		32590DAE22939672003171E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		32590DAF22939672003171E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		32590DB422939674003171E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32590DB722939674003171E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32590DB922939674003171E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -300,13 +300,13 @@
 		32590DDD2293987A003171E6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				324B8F3D2362D73600F9406D /* ViewController.h */,
+				324B8F3E2362D73600F9406D /* ViewController.m */,
 				32590DE82293A739003171E6 /* UIView+WGFrame.h */,
 				32590DE72293A739003171E6 /* UIView+WGFrame.m */,
 				32590DDE22939BCF003171E6 /* WGOCAnimationPrimaryHeader.pch */,
 				32590DAB22939672003171E6 /* AppDelegate.h */,
 				32590DAC22939672003171E6 /* AppDelegate.m */,
-				32590DAE22939672003171E6 /* ViewController.h */,
-				32590DAF22939672003171E6 /* ViewController.m */,
 				32590DDF22939CB9003171E6 /* WGGlobDefine.h */,
 			);
 			path = Main;
@@ -686,11 +686,11 @@
 			files = (
 				32590DF22293C4AF003171E6 /* WGCombinationViewController.m in Sources */,
 				32590DEF2293C3A2003171E6 /* WGAlphaAniViewController.m in Sources */,
-				32590DB022939672003171E6 /* ViewController.m in Sources */,
 				32590DE92293A739003171E6 /* UIView+WGFrame.m in Sources */,
 				32590DE62293A404003171E6 /* WGGeometryAniViewController.m in Sources */,
 				32590DF62293CA04003171E6 /* WGZoomViewController.m in Sources */,
 				32590DFE2293D67C003171E6 /* WGAirportViewController.m in Sources */,
+				324B8F3F2362D73600F9406D /* ViewController.m in Sources */,
 				32590DFA2293CEF7003171E6 /* WGTurnPlateViewController.m in Sources */,
 				32590E072293EDCC003171E6 /* WGPlaneViewController.m in Sources */,
 				32590DBB22939674003171E6 /* main.m in Sources */,
